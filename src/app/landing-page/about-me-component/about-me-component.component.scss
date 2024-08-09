@@ -1,0 +1,74 @@
+h1{
+    color: white;
+    font-size: 90px;
+}
+
+.about-me-section{
+    // height:100vh;
+    display: flex;
+    align-items: center;
+padding-top: 100px;
+// margin-bottom: 50px;
+    >div{
+        width: 50%;
+    }
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 40px;
+    justify-content: center;   
+    padding-left: 32px; 
+    >p{
+        color: white;
+    }
+    >div{
+        >p{
+            color: white;
+        }
+    }
+}
+
+.about-me-sub-boxes{
+    display: flex;
+}
+
+.picture-section {
+    background-image: url('./../../../assets/img/Purple\ shadow\ 2.svg');
+    background-position: right top;
+    height: 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.green-line{
+    background-color: rgba(112, 230, 28, 1);
+    height: 4px;
+    width: 20%;
+}
+
+.picture-frame{
+    
+    max-height: 500px;
+    max-width: 500px;
+    border: 4px;
+    border-style: solid;
+    border-color: rgba(112, 230, 28, 1);
+border-radius: 500px;
+    background-color: rgba(20, 29, 47, 1);
+    overflow: hidden;
+
+    >img{
+        margin-bottom: -10px;
+        margin-left: -40px;
+        max-width: 120%;
+        /* Optional: Bildgröße begrenzen */
+        height: auto;
+    }
+}

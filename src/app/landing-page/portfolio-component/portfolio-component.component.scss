@@ -1,0 +1,114 @@
+.portfolio-section {
+    color: white;
+    padding-top: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    >p {
+        text-align: center;
+    }
+}
+
+.portfolio-project {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+
+    >img {
+        max-height: 400px;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    gap: 18px;
+    >h3 {
+        color: rgba(151, 71, 255, 1);
+        font-size: 32px;
+    }
+
+    >h4 {
+        color: rgba(112, 230, 28, 1);
+        font-size: 23px;
+        font-weight: 400;
+    }
+}
+
+.button-box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    >button {
+        border-radius: 10px;
+        border-style: none;
+        color: white;
+        background-color: rgba(151, 71, 255, 1);
+        font-size: 23px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:hover {
+            
+            background-color: rgba(112, 230, 28, 1);
+            cursor: pointer;
+        }
+    }
+}
+
+.github-button{
+    background-color: rgba(20, 29, 47, 1) !important;
+    border-style: solid !important;
+    border-color: rgba(112, 230, 28, 1) !important;
+    &:hover {
+            
+        background-color: rgba(112, 230, 28, 1) !important;
+        cursor: pointer;
+    }
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+
+    >h1 {
+        font-size: 90px;
+    }
+}
+
+.first-purple-line {
+    height: 4px;
+    width: 100px;
+    background-color: rgba(151, 71, 255, 1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.second-purple-line {
+    height: 4px;
+    width: 507px;
+    background-color: rgba(151, 71, 255, 1);
+}
+
+.second-box{
+    display: flex;
+    flex-direction: row-reverse !important;
+    justify-content: space-around;
+}
+
+.second-text-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}

@@ -1,0 +1,80 @@
+.my-skills {
+    display: flex;
+padding-top: 100px;
+}
+
+.skills-icons-box {
+    // background-image: url('./../../../assets/img/green-shadow.svg');
+    // background-position: left top;
+    // background-repeat: no-repeat;
+
+
+    padding: 32px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.skills-icon {
+    >p {
+        color: white;
+    }
+}
+
+.skills-text-box {
+    display: flex;
+    color: white;
+    text-align: end;
+    // padding-right: 32px;
+}
+
+.first-box {}
+
+.second-box {
+    margin-right: 100px;
+
+    >h2 {
+        font-size: 32px;
+    }
+
+    >button {
+        margin-top: 24px;
+        border-radius: 10px;
+        border-style: none;
+        color: white;
+        background-color: rgba(112, 230, 28, 1);
+        font-size: 23px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:hover {
+            background-color: rgba(151, 71, 255, 1);
+            cursor: pointer;
+        }
+    }
+}
+
+.text-section {}
+
+.headline-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+
+    >h1 {
+        font-size: 90px;
+    }
+}
+
+.purple-line {
+    height: 4px;
+    width: 68px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(151, 71, 255, 1);
+}

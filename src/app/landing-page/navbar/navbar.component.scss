@@ -1,0 +1,28 @@
+.navbar {
+    background-color: rgba(20, 29, 47, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+    position: fixed;
+    width: 100%;
+    max-width: 1900px;
+    
+    z-index: 1;
+
+    >div {
+        padding: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        >a {
+            color: white;
+
+            &:hover {
+                color: rgba(112, 230, 28, 1);;
+            }
+        }
+    }
+}

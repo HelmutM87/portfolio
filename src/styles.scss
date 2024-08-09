@@ -1,7 +1,14 @@
 * {
     margin: 0;
     font-family: "Poppins";
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
+
+$dark-blue: color rgba(20, 29, 47, 1);
+$green: color rgba(112, 230, 28, 1);
+$red: color rgba(255, 71, 71, 1);
+$lila: color rgba(151, 71, 255, 1);
 
 .font-poppin {
     font-family: "Poppins";
