@@ -1,24 +1,15 @@
 .above-the-fold {
+
     height: 100vh;
-    max-width: 1900px;
+    max-width: 1440;
     display: flex;
     flex-direction: column;
-
-
-    // padding-top: 100px;
-
-    // object-fit:cover;
-    // background-position: center;
-
-    // >div {
-    //     width: 50%;
-    // }
+    align-content: center;
+    align-items: center;
 }
 
 .above-the-fold-content {
     display: flex;
-
-    
 }
 
 .border {
@@ -30,36 +21,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    // padding-bottom: 40px;
-    // margin-left: 32px;
-    // margin-right: 32px;
-
-
 }
-
-// .hero {
-//     background-image: url('./../../../assets/img/Photo\ shadows.svg');
-//     // background-size: cover;
-//     background-position: center;
-//     // object-fit: cover;
-//     // background-image: url('./../../../assets/img/28.\ hero-background.svg');
-
-//     // >div {
-//     //     // height: 100vh;
-//     //     display: flex;
-//     //     justify-content: center;
-//     //     // background-image: url('./../../../assets/img/profile-picture.png');
-//     // }
-
-//     >img {
-//         display: inline-block;
-//         text-align: center;
-// // padding-left: 50px;
-//         height: 100vh;
-
-//         text-align: center;
-//     }
-// }
 
 .hero {
     background-image: url('./../../../assets/img/Photo shadows.svg');
@@ -67,10 +29,6 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    // object-fit: cover;
-    
-
-
 }
 
 .hero>img {
@@ -87,17 +45,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    // margin-right: 32px;
 }
 
 .frame {
     display: flex;
     align-items: center;
-    // justify-content: center;
+    margin: 32px;
+    justify-content: center;
 
 }
 
 .first-frame-section {
-    // display: flex;
+
 
 
 
@@ -114,7 +74,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // z-index: 1;
+
+    position: relative;
+    text-align: center;
 
     >h1 {
         color: white;
@@ -127,25 +89,38 @@
         font-size: 62px;
     }
 
-    >button {
-        border-radius: 10px;
-        border-style: none;
-        color: white;
-        background-color: rgba(112, 230, 28, 1);
-        font-size: 23px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+}
 
-        &:hover {
-            background-color: rgba(151, 71, 255, 1);
-            cursor: pointer;
-        }
+.lets-talk-button {
+    position: absolute;
+    /* Ermöglicht es dem Button, sich unabhängig von den anderen Elementen zu bewegen */
+    bottom: -100px;
+    /* Platziert den Button am unteren Rand der Sektion */
+    left: 50%;
+    /* Zentriert den Button horizontal */
+    transform: translateX(-50%);
+    /* Korrigiert die Verschiebung, um den Button exakt zu zentrieren */
+    z-index: 1;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    background-color: rgba(112, 230, 28, 1);
+    font-size: 23px;
+    padding: 15px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 100ms ease, padding 100ms ease;
+
+    &:hover {
+        background-color: rgba(151, 71, 255, 1);
+        padding: 20px 35px;
+        /* Erhöht das Padding beim Hover */
     }
 }
 
-.above-the-fold-bottom-bar{
+
+
+.above-the-fold-bottom-bar {
     color: white;
     display: flex;
     width: 100%;
@@ -155,35 +130,381 @@
     margin-bottom: 32px;
 }
 
-.purple-line{
+.purple-line {
     color: rgba(151, 71, 255, 1);
     width: 100px;
     // border: 4px;
-    border-style:solid;
+    border-style: solid;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.contact-buttons{
+.contact-buttons {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-.scroll{
+.scroll {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 32px;
     transform: rotate(90deg);
-    >img{
+
+    >img {
         transform: rotate(270deg);
     }
 }
 
 
-// .scroll {
-//     > img {
-//         transform: rotate(180deg);
-//     }
-// }
+
+@media (min-width: 1301px) and (max-width: 1505px) {
+
+
+    .first-frame-section {
+        width: 90px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2 {
+            font-size: 40px;
+        }
+    }
+
+    .second-frame-section {
+        display: flex;
+
+        >h1 {
+            font-size: 60px;
+        }
+
+        >h2 {
+            font-size: 46px;
+        }
+    }
+}
+
+@media (min-width: 1255px) and (max-width: 1300px) {
+
+    .first-frame-section {
+        width: 90px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2 {
+            font-size: 40px;
+        }
+    }
+
+    .second-frame-section {
+        display: flex;
+
+        >h1 {
+            font-size: 50px;
+        }
+
+        >h2 {
+            font-size: 39px;
+        }
+
+
+    }
+
+    .hero {
+        height: 1000px;
+        width: auto;
+    }
+
+}
+
+@media (min-width: 1235px) and (max-width: 1254px) {
+    .first-frame-section {
+        width: 90px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2 {
+            font-size: 40px;
+        }
+    }
+
+    .second-frame-section {
+        display: flex;
+
+        >h1 {
+            font-size: 50px;
+        }
+
+        >h2 {
+            font-size: 39px;
+        }
+
+
+    }
+
+    .hero {
+        height: 1000px;
+        width: auto;
+    }
+
+    .frame {
+        margin: 32px 32px 32px 0;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1234px) {
+    .above-the-fold-content {
+        width: 100;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .first-frame-section {
+        width: 64px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2 {
+            font-size: 28px;
+        }
+    }
+
+    .second-frame-section {
+        display: flex;
+
+        >h1 {
+            font-size: 30px;
+        }
+
+        >h2 {
+            font-size: 23px;
+        }
+    }
+
+    .hero {
+        height: 950px;
+        width: auto;
+    }
+
+    .lets-talk-button {
+        padding: 10px 10px;
+    }
+
+    .border {
+        margin-top: -448px;
+    }
+
+    .frame {
+        margin: 32px 32px 32px 0;
+    }
+}
+
+@media (min-width: 946px) and (max-width: 999px){
+    .hero{
+        height: 880px;
+    }
+
+    .frame{
+        margin: 32px 32px 32px 0;
+    }
+
+    .first-frame-section {
+        width: 64px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2{
+            font-size: 28px;
+        }
+    }
+
+    .second-frame-section{
+        display: flex;
+
+        >h1{
+            font-size: 30px;
+        }
+
+        >h2{
+            font-size: 23px;
+        }
+    }
+    .lets-talk-button{
+        padding: 10px 10px;
+    }
+
+    .border{
+        margin-top: -400px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 945px){
+    .hero{
+        height: 880px;
+        >img{
+            height: 78%;
+    overflow: hidden;
+    padding-top: 70px;
+        }
+    }
+
+    .frame{
+        margin: 32px 32px 32px 0;
+    }
+
+    .first-frame-section {
+        width: 64px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2{
+            font-size: 28px;
+        }
+    }
+
+    .second-frame-section{
+        display: flex;
+        width: 237px;
+        >h1{
+            font-size: 28px;
+        }
+
+        >h2{
+            font-size: 22px;
+        }
+    }
+    .lets-talk-button{
+        padding: 10px 10px;
+        font-size: 22px;
+    }
+
+    .border{
+        margin-top: -400px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 799px){
+
+    .above-the-fold-content{
+        display: flex;
+    flex-direction: column;
+    width: 100vw;
+    }
+
+    .hero{
+        // height: 880px;
+        >img{
+            padding-top: 50px;
+    height: 80%;
+    overflow: hidden;
+        }
+    }
+
+    .frame-side{
+        display: flex;
+    flex-direction: column;
+    margin-top: -370px;
+    }
+
+    .frame{
+        margin: 32px 32px 32px 0;
+    }
+
+    .first-frame-section {
+        width: 64px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2{
+            font-size: 28px;
+        }
+    }
+
+    .second-frame-section{
+        display: flex;
+
+        >h1{
+            font-size: 30px;
+        }
+
+        >h2{
+            font-size: 23px;
+        }
+    }
+    .lets-talk-button{
+        padding: 10px 10px;
+    }
+
+    .border{
+        // margin-top: -750px;
+        margin-top: -400px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 741px){
+    .scroll{
+        display: none;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 620px){
+    // .contact-buttons{
+
+    //     display: none;
+    // }
+
+    #email-adress{
+        display: none;
+    }
+
+    .hero{
+        >img{
+            height: 60%;
+        }
+    }
+
+}
+
+
+@media (min-width: 0px) and (max-width: 375px){
+    .hero{
+        >img{
+            height: 50%;
+            padding-top: 80px;
+        }
+    }
+
+    .border{
+        margin-top: -450px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 345px){
+    // .frame{
+    //     margin: 1px;
+    // }
+
+    .second-frame-section{
+        >h1{
+            font-size: 24px;
+        }
+        >h2{
+            font-size: 18px;
+        }
+
+    }
+    .first-frame-section{
+        >h2{
+            font-size: 18px;
+        }
+    }
+
+    .lets-talk-button{
+        font-size: 16px;
+    }
+
+    .purple-line{
+        width: 48px;
+    }
+}

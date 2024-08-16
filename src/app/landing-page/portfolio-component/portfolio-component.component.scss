@@ -14,11 +14,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 17px;
 }
 
 .img {
     display: flex;
     justify-content: center;
+    width: 480px;
 
     >img {
         max-height: 400px;
@@ -30,6 +32,8 @@
     flex-direction: column;
     max-width: 480px;
     gap: 18px;
+    text-align: center;
+
     >h3 {
         color: rgba(151, 71, 255, 1);
         font-size: 32px;
@@ -42,10 +46,11 @@
     }
 }
 
-.button-box{
+.button-box {
     display: flex;
     justify-content: flex-start;
     gap: 60px;
+
     >button {
         border-radius: 10px;
         border-style: none;
@@ -58,19 +63,20 @@
         padding-bottom: 15px;
 
         &:hover {
-            
+
             background-color: rgba(112, 230, 28, 1);
             cursor: pointer;
         }
     }
 }
 
-.github-button{
+.github-button {
     background-color: rgba(20, 29, 47, 1) !important;
     border-style: solid !important;
     border-color: rgba(112, 230, 28, 1) !important;
+
     &:hover {
-            
+
         background-color: rgba(112, 230, 28, 1) !important;
         cursor: pointer;
     }
@@ -101,14 +107,142 @@
     background-color: rgba(151, 71, 255, 1);
 }
 
-.second-box{
+.second-box {
     display: flex;
-    flex-direction: row-reverse !important;
+    flex-direction: row-reverse;
     justify-content: space-around;
+    gap: 17px;
 }
 
-.second-text-box{
+.second-text-box {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+
+
+@media(max-width: 1149px) {
+    // .portfolio-project {
+    //     height: 350px;
+    // }
+
+    // .secon
+
+    .img {
+        >img {
+            max-height: 300px;
+        }
+    }
+
+    .headline{
+        >h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+@media(max-width: 949px) {
+    .button-box{
+        >button{
+            padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        }
+    }
+
+    .headline{
+        >h1 {
+            font-size: 70px;
+        }
+    }
+}
+
+@media(max-width: 879px){
+    .portfolio-project{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text{
+        align-items: center;
+    }
+
+    .second-text-box{
+        align-items: center;
+    }
+
+    .img {
+        >img {
+            max-height: 400px;
+        }
+    }
+
+    .headline{
+        >h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media(max-width: 599px){
+
+    .headline{
+        gap: 17px;
+        >h1 {
+            font-size: 50px;
+        }
+    }
+
+    .img {
+        >img {
+            max-height: 350px;
+        }
+    }
+
+}
+
+@media(max-width: 499px){
+    .headline{
+        >h1 {
+            font-size: 45px;
+        }
+    }
+
+    .img {
+        >img {
+            max-height: 250px;
+        }
+    }
+}
+
+@media(max-width: 399px) {
+
+    .button-box{
+        >button{
+            font-size: 20px;
+            padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+        }
+    }
+    
+    .headline{
+        gap: 10px;
+        >h1 {
+            font-size: 40px;
+        }
+    }
+    .img {
+        >img {
+            max-height: 200px;
+        }
+    }
 }

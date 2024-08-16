@@ -1,1 +1,81 @@
-<p>comments works!</p>
+<!-- <div id="comments-section" class="comments-section">
+
+    <div class="text-img-section">
+        <div class="text-section">
+            <p>Helmut always brings fresh ideas and a sharp eye for frontend details to the table. His organized
+                approach and dependability make him a great teammate.</p>
+            <div class="comment-editor-section">
+                <div class="purple-line-text"></div>
+                <p>Raphaela Multhaup - Team Partner</p>
+            </div>
+        </div>
+
+        <div class="img-section">
+            <div class="picture-frame"><img src="./../../../assets/img/raphaela_multhaup.jpg" alt="img of teampartner">
+            </div>
+            <div class="purple-line-img"></div>
+        </div>
+    </div>
+
+    <div class="nav-arrows">
+        <div id="arrow-left" class="arrow">
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="ring" x="1" y="1" width="37" height="37" rx="18.5" stroke="none" stroke-width="2" />
+                <path
+                    d="M18 15.828L13.343 20.485C12.9526 20.8755 12.3195 20.8755 11.929 20.485C11.5386 20.0945 11.5386 19.4615 11.929 19.071L18.2929 12.7071C18.6834 12.3166 19.3166 12.3166 19.7071 12.7071L26.071 19.071C26.4615 19.4615 26.4615 20.0945 26.071 20.485C25.6806 20.8755 25.0475 20.8755 24.657 20.485L20 15.828L20 27C20 27.5523 19.5523 28 19 28C18.4477 28 18 27.5523 18 27L18 15.828Z"
+                    fill="rgba(112, 230, 28, 1)" />
+            </svg>
+        </div>
+        <div id="dot1" class="dot"></div>
+        <div id="dot2" class="dot"></div>
+        <div id="arrow-right" class="arrow">
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="ring" x="1" y="1" width="37" height="37" rx="18.5" stroke="none" stroke-width="2" />
+                <path
+                    d="M18 15.828L13.343 20.485C12.9526 20.8755 12.3195 20.8755 11.929 20.485C11.5386 20.0945 11.5386 19.4615 11.929 19.071L18.2929 12.7071C18.6834 12.3166 19.3166 12.3166 19.7071 12.7071L26.071 19.071C26.4615 19.4615 26.4615 20.0945 26.071 20.485C25.6806 20.8755 25.0475 20.8755 24.657 20.485L20 15.828L20 27C20 27.5523 19.5523 28 19 28C18.4477 28 18 27.5523 18 27L18 15.828Z"
+                    fill="rgba(112, 230, 28, 1)" />
+            </svg>
+        </div>
+    </div>
+
+</div> -->
+
+
+<div id="comments-section" class="comments-section">
+    <div class="text-img-section">
+      <div class="text-section">
+        <p>{{ currentMember.review }}</p>
+        <div class="comment-editor-section">
+          <div class="purple-line-text"></div>
+          <p>{{ currentMember.name }} - Team Partner</p>
+        </div>
+      </div>
+  
+      <div class="img-section">
+        <div class="pseudo-div"></div>
+        <div class="picture-frame">
+          <img [src]="currentMember.photo" alt="img of teampartner">
+        </div>
+        <div class="purple-line-img"></div>
+      </div>
+    </div>
+  
+    <div class="nav-arrows">
+      <div id="arrow-left" class="arrow" (click)="showPreviousMember()">
+        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="ring" x="1" y="1" width="37" height="37" rx="18.5" stroke="none" stroke-width="2" />
+          <path d="M18 15.828L13.343 20.485C12.9526 20.8755 12.3195 20.8755 11.929 20.485C11.5386 20.0945 11.5386 19.4615 11.929 19.071L18.2929 12.7071C18.6834 12.3166 19.3166 12.3166 19.7071 12.7071L26.071 19.071C26.4615 19.4615 26.4615 20.0945 26.071 20.485C25.6806 20.8755 25.0475 20.8755 24.657 20.485L20 15.828L20 27C20 27.5523 19.5523 28 19 28C18.4477 28 18 27.5523 18 27L18 15.828Z" fill="rgba(112, 230, 28, 1)" />
+        </svg>
+      </div>
+      <!-- <div id="dot1" class="dot"></div>
+      <div id="dot2" class="dot"></div> -->
+      <div *ngFor="let member of teamMembers; let i = index" class="dot" [class.active]="i === currentIndex"></div>
+      <div id="arrow-right" class="arrow" (click)="showNextMember()">
+        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="ring" x="1" y="1" width="37" height="37" rx="18.5" stroke="none" stroke-width="2" />
+          <path d="M18 15.828L13.343 20.485C12.9526 20.8755 12.3195 20.8755 11.929 20.485C11.5386 20.0945 11.5386 19.4615 11.929 19.071L18.2929 12.7071C18.6834 12.3166 19.3166 12.3166 19.7071 12.7071L26.071 19.071C26.4615 19.4615 26.4615 20.0945 26.071 20.485C25.6806 20.8755 25.0475 20.8755 24.657 20.485L20 15.828L20 27C20 27.5523 19.5523 28 19 28C18.4477 28 18 27.5523 18 27L18 15.828Z" fill="rgba(112, 230, 28, 1)" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  

@@ -18,3 +18,22 @@ import { ContactComponent } from './contact/contact.component';
 export class LandingPageComponent {
 
 }
+
+// @Component({
+//   selector: 'app-landing-page',
+//   standalone: true,
+//   imports: [
+//     NavbarComponent,
+//     FooterComponent,
+//     AboveTheFoldComponent,
+//     AboutMeComponentComponent,
+//     MySkillsComponentComponent,
+//     PortfolioComponentComponent,
+//     CommentsComponent,
+//     ContactComponent
+//   ],
+//   templateUrl: './landing-page.component.html',
+//   styleUrls: ['./landing-page.component.scss']  // Hier "styleUrls" anstelle von "styleUrl"
+// })
+// export class LandingPageComponent {}
+
