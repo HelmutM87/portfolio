@@ -21,9 +21,11 @@
     display: flex;
     justify-content: center;
     width: 480px;
+    max-width: 100%;
 
     >img {
         max-height: 400px;
+        max-width: 100%;
     }
 }
 

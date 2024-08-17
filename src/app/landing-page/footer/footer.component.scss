@@ -29,3 +29,50 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+
+@media(max-width: 999px){
+    .middle{
+        >p{
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 699px){
+    .middle{
+        >p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media(min-width: 650px){
+    .footer{
+        >a{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 649px){
+    .middle{
+        >p{
+            font-size: 16px;
+        }
+    }
+
+    .footer{
+        flex-direction: column;
+    padding: 32px;
+    >a{
+        color: white;
+    }
+    }
+
+    .left-side{
+        >a{
+            display: none;
+        }
+    }
+}
+
