@@ -113,6 +113,14 @@
         }
     }
 
+    >span{
+        color: #E61C40;
+        font-size: 14px;
+        text-align: left; /* Text links ausrichten */
+        width: 100%; /* Span nimmt die gesamte Breite ein */
+        display: block; /* Sicherstellen, dass das Span ein Block-Element ist */
+    }
+
 }
 
 .privacy-policy-checkbox {
@@ -152,6 +160,8 @@
         // }
     }
 }
+
+
 
 
 

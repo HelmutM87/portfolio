@@ -1,4 +1,5 @@
 
+
 .d-none{
     display: none !important;
 }
@@ -16,9 +17,9 @@
     color: white;
     position: fixed;
     width: 100%;
-    // max-width: 1900px;
+    max-width: 1920px;
     z-index: 1;
-
+    margin: 0 32px;
     flex-wrap: wrap;
 
     >div {
