@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio-component.component.scss'
 })
 export class PortfolioComponentComponent {
-
+  goToUrl(url: string) {
+    window.location.href = url;
+}
 }

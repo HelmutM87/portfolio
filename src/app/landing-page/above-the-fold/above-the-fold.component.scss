@@ -54,11 +54,11 @@
 }
 
 .hero>img {
-    max-width: 100%;
-    /* Optional: Bildgröße begrenzen */
-    height: auto;
-    /* Sicherstellen, dass das Bild die richtige Proportion hat */
-    overflow: hidden;
+    // max-width: 100%;
+    // /* Optional: Bildgröße begrenzen */
+    // height: auto;
+    // /* Sicherstellen, dass das Bild die richtige Proportion hat */
+    // overflow: hidden;
 }
 
 
@@ -74,7 +74,7 @@
 .frame {
     display: flex;
     align-items: center;
-    margin: 32px;
+    // margin: 32px;
     justify-content: center;
 
 }
@@ -123,7 +123,7 @@
     /* Zentriert den Button horizontal */
     transform: translateX(-50%);
     /* Korrigiert die Verschiebung, um den Button exakt zu zentrieren */
-    z-index: 1;
+    z-index: 0;
     border-radius: 10px;
     border-style: none;
     color: white;
@@ -186,51 +186,147 @@
     }
 }
 
-@media (max-width: 1920px){
+@media(max-height: 1159px){
+.border{
+        margin-top: -700px;
+        height: 700px;
+    }
 
-    // .border{
-    //     margin-top: -750px;
-    //     height: 750px;
-    // }
-
-    
+    .above-the-fold {
+        
+        background-position: left bottom;
+        background-size: 48%;
+        // background-size: 50%; // Passt das Hintergrundbild an die Größe des Containers an
+        // width: 100%;
+        // max-width: 1920px;
+    }
 }
 
-// @media (max-width: 1850px){
+// @media(max-height: 1029px){
 //     .border{
-//         margin-top: -700px;
-//         height: 700px;
-//     }
-// }
-
-// @media (min-width: 1301px) and (max-width: 1505px) {
-
-
-//     .first-frame-section {
-//         width: 90px;
-//         display: flex;
-//         justify-content: flex-end;
-
-//         >h2 {
-//             font-size: 40px;
+//             margin-top: -680px;
+//             height: 680px;
+//         }
+//         .above-the-fold {
+        
+//             // background-position: left bottom;
+//             background-size: 44%;
+//             // background-size: 50%; // Passt das Hintergrundbild an die Größe des Containers an
+//             // width: 100%;
+//             // max-width: 1920px;
 //         }
 //     }
 
-//     .second-frame-section {
-//         display: flex;
+    // @media(max-height: 999px){
+    //     .border{
+    //         margin-top: -670px;
+    //         height: 675px;
+    //         }
+    //     }
 
-//         >h1 {
-//             font-size: 60px;
-//         }
 
-//         >h2 {
-//             font-size: 46px;
-//         }
-//     }
-// }
+@media (max-width: 1920px){
 
-// @media (min-width: 1255px) and (max-width: 1300px) {
+    .border{
+        margin-top: -680px;
+        height: 680px;
+    }
+}
 
+@media (max-width: 1850px){
+    // .border{
+    //     margin-top: -700px;
+    //     height: 700px;
+    // }
+
+    .frame{
+        justify-content: flex-start;
+    }
+
+    .second-frame-section{
+        >h1{
+            font-size: 60px;
+        }
+        >h2{
+            font-size: 46px;
+        }
+    }
+}
+
+@media (max-width: 1529px) {
+
+.border{
+        margin-top: -600px;
+        height: 600px;
+    }
+
+    // .first-frame-section {
+    //     width: 90px;
+    //     display: flex;
+    //     justify-content: flex-end;
+
+    //     >h2 {
+    //         font-size: 40px;
+    //     }
+    // }
+
+    // .second-frame-section {
+    //     display: flex;
+
+    //     >h1 {
+    //         font-size: 60px;
+    //     }
+
+    //     >h2 {
+    //         font-size: 46px;
+    //     }
+    // }
+}
+
+@media (max-width: 1359px) {
+
+.border{
+    margin-top: -500px;
+    height: 500px;
+}
+
+    .first-frame-section {
+    //     width: 90px;
+    //     display: flex;
+    //     justify-content: flex-end;
+
+        >h2 {
+            font-size: 40px;
+        }
+    }
+
+    .second-frame-section {
+    //     display: flex;
+
+        >h1 {
+            font-size: 50px;
+        }
+
+        >h2 {
+            font-size: 39px;
+        }
+    }
+
+    .above-the-fold{
+        background-position: left center;
+        background-size: 50%;
+    }
+
+    // .hero {
+    //     height: 1000px;
+    //     width: auto;
+    // }
+
+}
+
+
+
+@media (max-width: 1254px) {
 //     .first-frame-section {
 //         width: 90px;
 //         display: flex;
@@ -253,39 +349,7 @@
 //         }
 
 
-//     }
-
-//     .hero {
-//         height: 1000px;
-//         width: auto;
-//     }
-
-// }
-
-// @media (min-width: 1235px) and (max-width: 1254px) {
-//     .first-frame-section {
-//         width: 90px;
-//         display: flex;
-//         justify-content: flex-end;
-
-//         >h2 {
-//             font-size: 40px;
-//         }
-//     }
-
-//     .second-frame-section {
-//         display: flex;
-
-//         >h1 {
-//             font-size: 50px;
-//         }
-
-//         >h2 {
-//             font-size: 39px;
-//         }
-
-
-//     }
+    // }
 
 //     .hero {
 //         height: 1000px;
@@ -295,45 +359,55 @@
 //     .frame {
 //         margin: 32px 32px 32px 0;
 //     }
-// }
 
-// @media (min-width: 1000px) and (max-width: 1234px) {
+}
+
+@media  (max-width: 1234px) {
+    .above-the-fold{
+        background-position: left center;
+        background-size: 60%;
+    }
 //     .above-the-fold-content {
 //         width: 100;
 //         display: flex;
 //         justify-content: space-between;
 //     }
 
-//     .first-frame-section {
-//         width: 64px;
+    .first-frame-section {
+        // width: 64px;
+        // display: flex;
+        // justify-content: flex-end;
+
+        >h2 {
+            font-size: 34px;
+        }
+    }
+
+    .second-frame-section {
 //         display: flex;
-//         justify-content: flex-end;
 
-//         >h2 {
-//             font-size: 28px;
-//         }
-//     }
+        >h1 {
+            font-size: 40px;
+        }
 
-//     .second-frame-section {
-//         display: flex;
+        >h2 {
+            font-size: 31px;
+        }
 
-//         >h1 {
-//             font-size: 30px;
-//         }
+    }
 
-//         >h2 {
-//             font-size: 23px;
-//         }
-//     }
+    .lets-talk-button{
+        font-size: 20px;
+    }
 
 //     .hero {
 //         height: 950px;
 //         width: auto;
 //     }
 
-//     .lets-talk-button {
-//         padding: 10px 10px;
-//     }
+    // .lets-talk-button {
+    //     padding: 10px 10px;
+    // }
 
 //     .border {
 //         margin-top: -448px;
@@ -342,132 +416,78 @@
 //     .frame {
 //         margin: 32px 32px 32px 0;
 //     }
-// }
-
-@media (min-width: 946px) and (max-width: 999px){
-    .hero{
-        height: 880px;
-    }
-
-    .frame{
-        margin: 32px 32px 32px 0;
-    }
-
-    .first-frame-section {
-        width: 64px;
-        display: flex;
-        justify-content: flex-end;
-
-        >h2{
-            font-size: 28px;
-        }
-    }
-
-    .second-frame-section{
-        display: flex;
-
-        >h1{
-            font-size: 30px;
-        }
-
-        >h2{
-            font-size: 23px;
-        }
-    }
-    .lets-talk-button{
-        padding: 10px 10px;
-    }
-
-    .border{
-        margin-top: -400px;
-    }
 }
 
-@media (min-width: 800px) and (max-width: 945px){
+// @media (max-width: 999px){
+//     .hero{
+//         height: 880px;
+//     }
+
+//     .frame{
+//         margin: 32px 32px 32px 0;
+//     }
+
+//     .first-frame-section {
+//         width: 64px;
+//         display: flex;
+//         justify-content: flex-end;
+
+//         >h2{
+//             font-size: 28px;
+//         }
+//     }
+
+//     .second-frame-section{
+//         display: flex;
+
+//         >h1{
+//             font-size: 30px;
+//         }
+
+//         >h2{
+//             font-size: 23px;
+//         }
+//     }
+//     .lets-talk-button{
+//         padding: 10px 10px;
+//     }
+
+//     .border{
+//         margin-top: -400px;
+//     }
+// }
+
+@media (max-width: 945px){
     .hero{
         height: 880px;
         >img{
-            height: 78%;
+            height: fit-content;
     overflow: hidden;
     padding-top: 70px;
         }
     }
 
-    .frame{
-        margin: 32px 32px 32px 0;
+    .above-the-fold{
+        background-size: 55%;
     }
 
+//     .frame{
+//         margin: 32px 32px 32px 0;
+//     }
+
     .first-frame-section {
-        width: 64px;
-        display: flex;
-        justify-content: flex-end;
+//         width: 64px;
+//         display: flex;
+//         justify-content: flex-end;
 
         >h2{
-            font-size: 28px;
+            font-size: 27px;
         }
     }
 
     .second-frame-section{
-        display: flex;
-        width: 237px;
-        >h1{
-            font-size: 28px;
-        }
-
-        >h2{
-            font-size: 22px;
-        }
-    }
-    .lets-talk-button{
-        padding: 10px 10px;
-        font-size: 22px;
-    }
-
-    .border{
-        margin-top: -400px;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 799px){
-
-    .above-the-fold-content{
-        display: flex;
-    flex-direction: column;
-    width: 100%;
-    }
-
-    .hero{
-        // height: 880px;
-        >img{
-            padding-top: 50px;
-    height: 80%;
-    overflow: hidden;
-        }
-    }
-
-    .frame-side{
-        display: flex;
-    flex-direction: column;
-    margin-top: -370px;
-    }
-
-    .frame{
-        margin: 32px 32px 32px 0;
-    }
-
-    .first-frame-section {
-        width: 64px;
-        display: flex;
-        justify-content: flex-end;
-
-        >h2{
-            font-size: 28px;
-        }
-    }
-
-    .second-frame-section{
-        display: flex;
-
+//         display: flex;
+//         width: 237px;
         >h1{
             font-size: 30px;
         }
@@ -477,57 +497,236 @@
         }
     }
     .lets-talk-button{
-        padding: 10px 10px;
+        font-size: 20px;
+        width: max-content;
     }
 
     .border{
-        // margin-top: -750px;
-        margin-top: -400px;
+        margin-top: -480px;
+        height: 540px;
     }
 }
 
-@media (min-width: 0px) and (max-width: 741px){
-    .scroll{
-        display: none;
+@media  (max-width: 799px){
+
+    .above-the-fold{
+        // background-image: none;
+        background-position: center;
+        background-size: contain;
+        // margin-top: 200px;
     }
-}
 
-@media (min-width: 0px) and (max-width: 620px){
-    // .contact-buttons{
+    .above-the-fold-content{
+        // background-image: url('./../../../assets/img/Photo\ shadows.svg');
+        // background-size: 80%;
+        // background-repeat: no-repeat;
+        // background-position: center bottom;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 
-    //     display: none;
-    // }
+    .hero{
+        // height: 880px;
+        width: 80%;
+        >img{
+            padding-top: 50px;
+    height: fit-content;
+    overflow: hidden;
+        }
+    }
 
     #email-adress{
         display: none;
     }
 
-    .hero{
-        >img{
-            height: 60%;
+    .frame-side{
+
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -220px;
+    width: 80%;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .frame{
+        margin: 32px 32px 32px 0;
+    }
+
+    .first-frame-section {
+        width: 64px;
+        display: flex;
+        justify-content: flex-end;
+
+        >h2{
+            font-size: 28px;
         }
     }
 
-}
+    .second-frame-section{
+        display: flex;
 
-
-@media (min-width: 0px) and (max-width: 375px){
-    .hero{
-        >img{
-            height: 50%;
-            padding-top: 80px;
+        >h1{
+            // font-size: 53px;
+            font-size: 40px;
         }
+
+        >h2{
+            // font-size: 41px;
+            font-size: 31px;
+        }
+    }
+    .lets-talk-button{
+        padding: 10px 10px;
     }
 
     .border{
-        margin-top: -450px;
+        // margin-top: -440px;
+        // height: 600px;
+        // margin-top: -334px;
+        // height: 497px;
+        margin-top: -373px;
+        height: 500px;
     }
 }
 
-@media (min-width: 0px) and (max-width: 345px){
-    // .frame{
-    //     margin: 1px;
+@media  (max-width: 749px){
+    
+
+    .frame-side{
+        margin-top: -240px;
+    }
+
+.border{
+    margin-top: -355px;
+        height: 498px;
+}
+    
+}
+
+@media  (max-width: 699px){
+
+    .frame-side{
+        width: 90%;
+    }
+}
+
+@media (max-width: 549px){
+
+    .frame-side{
+        margin-top: -300px;
+        width: 100%;
+    }
+
+    .border{
+        margin-top: -420px;
+        height: 600px;
+    }
+
+    
+
+}
+
+@media (max-width: 499px){
+    .frame-side{
+        margin-top: -380px;
+        
+    }
+
+    .border{
+        margin-top: -460px;
+        height: 730px;
+    }
+}
+
+@media (max-width: 449px){
+    .frame-side{
+        margin-top: -355px;
+        
+    }
+
+    // .border{
+    //     margin-top: -460px;
+    //     height: 730px;
     // }
+
+    .hero{
+        width: 100%;
+        // height: 800px;
+    }
+
+    .second-frame-section{
+        display: flex;
+
+        >h1{
+            // font-size: 53px;
+            font-size: 30px;
+        }
+
+        >h2{
+            // font-size: 41px;
+            font-size: 23px;
+        }
+    }
+}
+
+
+
+@media (max-width: 375px){
+
+    .first-frame-section{
+        >h2{
+            font-size: 23px;
+        }
+    }
+
+    .second-frame-section{
+        display: flex;
+
+        >h1{
+            // font-size: 53px;
+            font-size: 26px;
+        }
+
+        >h2{
+            // font-size: 41px;
+            font-size: 20px;
+        }
+    }
+
+    .purple-line{
+        width: 68px;
+    }
+    .lets-talk-button{
+        font-size: 18px;
+    }
+    .hero{
+
+        height: 750px;
+        
+        // >img{
+        //     height: 50%;
+        //     padding-top: 80px;
+        // }
+    }
+
+    .border{
+        margin-top: -350px;
+        height: 500px;
+    }
+
+
+}
+
+@media (max-width: 345px){
+//     // .frame{
+//     //     margin: 1px;
+//     // }
 
     .second-frame-section{
         >h1{

@@ -1,4 +1,5 @@
 .my-skills {
+    max-width: 1920px;
     display: flex;
     padding-top: 100px;
 }
@@ -217,6 +218,7 @@
 
         >a{
             transform: none;
+            font-size: 20px;
         }
     }
 
