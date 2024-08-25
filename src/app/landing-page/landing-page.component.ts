@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from './footer/footer.component';
 import { AboveTheFoldComponent } from "./above-the-fold/above-the-fold.component";
 import { AboutMeComponentComponent } from "./about-me-component/about-me-component.component";
 import { MySkillsComponentComponent } from "./my-skills-component/my-skills-component.component";
@@ -11,7 +11,15 @@ import { ContactComponent } from './contact/contact.component';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, AboveTheFoldComponent, AboutMeComponentComponent, MySkillsComponentComponent, PortfolioComponentComponent, CommentsComponent, ContactComponent],
+  imports: [
+    NavbarComponent, 
+    // FooterComponent, 
+    AboveTheFoldComponent, 
+    AboutMeComponentComponent, 
+    MySkillsComponentComponent, 
+    PortfolioComponentComponent, 
+    CommentsComponent, 
+    ContactComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
