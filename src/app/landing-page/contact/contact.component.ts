@@ -1,29 +1,3 @@
-// import { Component } from '@angular/core';
-// import { FormsModule, NgForm } from '@angular/forms';
-
-// @Component({
-//   selector: 'app-contact',
-//   standalone: true,
-//   imports: [FormsModule],
-//   templateUrl: './contact.component.html',
-//   styleUrl: './contact.component.scss'
-// })
-// export class ContactComponent {
-
-//   contactData = {
-//     name: "",
-//     email: "",
-//     message: "",
-//   }
-
-//   onSubmit(ngForm: NgForm){
-//     if (ngForm.valid && ngForm.submitted) {
-//       console.log(this.contactData)
-//     }
-//   }
-
-// }
-
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -52,10 +26,12 @@ export class ContactComponent {
   //   }
   // }
 
-  mailTest = true;
+  // mailTest = true;
+  mailTest = false;
+
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://helmut-martens.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -65,8 +41,21 @@ export class ContactComponent {
     },
   };
 
+  // post = {
+  //   endPoint: 'https://portfolio.helmut-martens.com/sendMail.php',
+  //   body: (payload: any) => JSON.stringify(payload),
+  //   options: {
+  //     headers: {
+  //       'Content-Type': 'application/json',  // Verwenden Sie 'application/json'
+  //       responseType: 'text',
+  //     },
+  //   },
+  // };
+
+  // endPoint: 'https://helmut-martens.com/sendMail.php',
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
