@@ -98,21 +98,47 @@
         }
     }
 
+    // >button {
+    //     border-radius: 10px;
+    //     border-style: none;
+    //     color: white;
+    //     background-color: rgba(112, 230, 28, 1);
+    //     font-size: 23px;
+    //     padding-left: 30px;
+    //     padding-right: 30px;
+    //     padding-top: 15px;
+    //     padding-bottom: 15px;
+    //     max-width: 253px;
+
+    //     &:hover {
+    //         background-color: rgba(151, 71, 255, 1);
+    //         cursor: pointer;
+    //     }
+    // }
+
     >button {
         border-radius: 10px;
         border-style: none;
         color: white;
-        background-color: rgba(112, 230, 28, 1);
         font-size: 23px;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 15px;
         padding-bottom: 15px;
         max-width: 253px;
+        background-color: grey; /* Standardfarbe, wenn Formular nicht bereit ist */
 
         &:hover {
-            background-color: rgba(151, 71, 255, 1);
-            cursor: pointer;
+            background-color: grey; /* Verhindert Farbänderung beim Hover, wenn Button grau ist */
+        }
+    }
+
+    .enabled-button {
+        background-color: rgba(112, 230, 28, 1); /* Farbe wenn Formular bereit ist */
+        cursor: pointer; /* Zeigt an, dass der Button klickbar ist */
+
+        &:hover {
+            background-color: rgba(151, 71, 255, 1); /* Hover-Farbe */
         }
     }
 
@@ -162,6 +188,30 @@
         }
     }
 }
+
+// .scroll-to-top-button-box {
+//     width: 100%;
+
+//     > div {
+//         display: flex;
+//         justify-content: flex-end;
+//         width: 100%;
+
+//         > img {
+//             transition: filter 0.3s ease, transform 0.3s ease;
+//             cursor: pointer;
+//             // Füge eine Standardbild-URL hinzu
+//             content: url('./../../../assets/img/4. Go up button.svg');
+
+//             &:hover {
+//                 // Ändere die Bild-URL beim Hover
+//                 content: url('./../../../assets/img/scroll-to-top-arrow-green.svg');
+//                 filter: brightness(1.2); // Optionale Helligkeitserhöhung beim Hover
+//             }
+//         }
+//     }
+// }
+
 
 @media(max-width:1049px) {
     .headline-box {

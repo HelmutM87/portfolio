@@ -24,18 +24,28 @@ export class CommentsComponent {
 
   currentIndex = 0;
 
-
+  /**
+   * Advances to the next team member in the list.
+   * If the current member is the last one, it wraps around to the first member.
+  */
   showNextMember() {
     this.currentIndex = (this.currentIndex + 1) % this.teamMembers.length;
   }
 
-
+  /**
+    * Moves to the previous team member in the list.
+    * If the current member is the first one, it wraps around to the last member.
+  */
   showPreviousMember() {
     this.currentIndex = (this.currentIndex - 1 + this.teamMembers.length) % this.teamMembers.length;
   }
 
-
+  /**
+   * Retrieves the currently selected team member.
+   * @returns {TeamMember} The currently selected team member.
+   */
   get currentMember() {
     return this.teamMembers[this.currentIndex];
   }
+
 }
