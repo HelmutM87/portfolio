@@ -22,6 +22,7 @@ export class NavbarComponent implements AfterViewInit {
     if (isPlatformBrowser(this.platformId)) {
       const links = this.el.nativeElement.querySelectorAll('.navbar a');
       const menuOverlay = this.el.nativeElement.querySelector('#menu-overlay');
+      const body = document.body;
 
       links.forEach((link: HTMLElement) => {
         this.renderer.listen(link, 'click', () => {
@@ -30,6 +31,7 @@ export class NavbarComponent implements AfterViewInit {
           if (this.isMenuActive) {
             this.renderer.removeClass(this.el.nativeElement.querySelector('.burger-menu'), 'active');
             this.renderer.addClass(menuOverlay, 'd-none');
+            this.renderer.setStyle(body, 'overflow', '');  // Re-enable scroll
             this.isMenuActive = false;
           }
         });
@@ -44,9 +46,11 @@ export class NavbarComponent implements AfterViewInit {
           if (this.isMenuActive) {
             this.renderer.addClass(burgerMenu, 'active');
             this.renderer.removeClass(menuOverlay, 'd-none');
+            this.renderer.setStyle(body, 'overflow', 'hidden');  // Disable scroll
           } else {
             this.renderer.removeClass(burgerMenu, 'active');
             this.renderer.addClass(menuOverlay, 'd-none');
+            this.renderer.setStyle(body, 'overflow', '');  // Re-enable scroll
           }
         });
       }

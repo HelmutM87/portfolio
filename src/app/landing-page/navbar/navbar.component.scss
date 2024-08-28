@@ -20,7 +20,7 @@
     flex-wrap: wrap;
 
     >div {
-        padding: 32px;
+        padding: 10px 32px;
         display: flex;
         align-items: center;
         gap: 16px;
@@ -41,6 +41,15 @@
                 color: rgba(112, 230, 28, 1);
             }
         }
+    }
+}
+
+.logo{
+    // height: 100%;
+    // max-height: 100px;
+    
+    >img{
+        max-height: 50px;
     }
 }
 
@@ -75,7 +84,7 @@
 
 .menu-overlay-bg {
     background-color: #141D2F;
-    opacity: 80%;
+    opacity: 86%;
     z-index: 4;
     position: fixed;
     left: 0;

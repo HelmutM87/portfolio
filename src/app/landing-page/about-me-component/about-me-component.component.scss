@@ -79,7 +79,7 @@ h1 {
 
 @media (max-width: 1449px) {
     .picture-frame {
-        height: 480px;
+        height: 400px;
     }
 
     .text-section {
@@ -94,7 +94,10 @@ h1 {
 @media (max-width: 1299px) {
 
     .picture-frame {
-        height: 450px;
+    //     height: 450px;
+    >img{
+        margin-left: -10px;
+    }
     }
 
     .text-section {
@@ -110,6 +113,9 @@ h1 {
 
     .picture-frame {
         height: 420px;
+        >img{
+            margin-left: 0;
+        }
     }
 
     .text-section {
@@ -124,6 +130,10 @@ h1 {
 @media (max-width: 1129px) {
     .picture-frame {
         height: 380px;
+
+        >img{
+            margin-left: 0;
+        }
     }
 
     .green-line {
@@ -136,6 +146,9 @@ h1 {
 
     .picture-frame {
         height: 360px;
+        >img{
+            margin-left: -28px;
+        }
     }
 }
 

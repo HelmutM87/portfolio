@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.scss'],
-  imports: [CommonModule] 
+  imports: [CommonModule]
 })
 export class CommentsComponent {
   teamMembers = [
@@ -29,12 +29,12 @@ export class CommentsComponent {
     this.currentIndex = (this.currentIndex + 1) % this.teamMembers.length;
   }
 
-  
+
   showPreviousMember() {
     this.currentIndex = (this.currentIndex - 1 + this.teamMembers.length) % this.teamMembers.length;
   }
 
-  
+
   get currentMember() {
     return this.teamMembers[this.currentIndex];
   }
