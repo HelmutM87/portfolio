@@ -1,181 +1,197 @@
 @import url('./../../../styles.scss');
 
-h1{
+h1 {
     color: white;
     font-size: 90px;
 }
 
-.about-me-section{
-    max-width: 1920px;
+.about-me-section {
+    background-image: url('./../../../assets/img/Purple\ shadow\ 2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
     display: flex;
     align-items: center;
-padding-top: 100px;
-    >div{
+    max-width: 1920px;
+    padding-top: 100px;
+
+    >div {
         width: 50%;
     }
 }
 
-.text-section{
+.text-section {
     display: flex;
     flex-direction: column;
     height: 100%;
     row-gap: 40px;
-    justify-content: center;   
-    padding-left: 32px; 
-    >p{
+    justify-content: center;
+    padding-left: 32px;
+
+    >p {
         color: white;
     }
-    >div{
-        >p{
+
+    >div {
+        >p {
             color: white;
         }
     }
 }
 
-.about-me-sub-boxes{
+.about-me-sub-boxes {
     display: flex;
     align-items: flex-start;
 }
 
 .picture-section {
-    background-image: url('./../../../assets/img/Purple\ shadow\ 2.svg');
-    background-position: right top;
+    background-position: center;
     height: 100%;
-    background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-
-.green-line{
+.green-line {
     background-color: rgba(112, 230, 28, 1);
     height: 4px;
     width: 20%;
 }
 
-.picture-frame{
+.picture-frame {
     aspect-ratio: 1 / 1;
     max-height: 500px;
     max-width: 500px;
     border: 4px;
     border-style: solid;
     border-color: rgba(112, 230, 28, 1);
-border-radius: 500px;
+    border-radius: 500px;
     background-color: rgba(20, 29, 47, 1);
     overflow: hidden;
 
-    >img{
+    >img {
         margin-bottom: -10px;
         margin-left: -40px;
         max-width: 120%;
-        /* Optional: Bildgröße begrenzen */
         height: auto;
     }
 }
 
-@media  (max-width: 1449px){
-    .picture-frame{
+@media (max-width: 1449px) {
+    .picture-frame {
         height: 480px;
     }
 
-    .text-section{
+    .text-section {
         padding-right: 32px;
 
-        >h1{
+        >h1 {
             font-size: 80px;
         }
     }
 }
 
-@media  (max-width: 1299px){
-    .picture-frame{
+@media (max-width: 1299px) {
+
+    .picture-frame {
         height: 450px;
     }
 
-    .text-section{
+    .text-section {
         padding-right: 32px;
 
-        >h1{
+        >h1 {
             font-size: 75px;
         }
     }
 }
 
-@media  (max-width: 1279px){
-    .picture-frame{
+@media (max-width: 1279px) {
+
+    .picture-frame {
         height: 420px;
     }
 
-    .text-section{
+    .text-section {
         padding-right: 32px;
 
-        >h1{
+        >h1 {
             font-size: 70px;
         }
     }
 }
 
-@media  (max-width: 1129px){
-    .picture-frame{
+@media (max-width: 1129px) {
+    .picture-frame {
         height: 380px;
     }
 
-    .green-line{
+    .green-line {
         width: 15%;
     }
-    
+
 }
 
-@media  (max-width: 1059px){
-    .picture-frame{
+@media (max-width: 1059px) {
+
+    .picture-frame {
         height: 360px;
     }
-
-    
 }
 
-@media  (max-width: 949px){
-    .picture-frame{
+@media (max-width: 949px) {
+
+    .picture-frame {
         height: 350px;
     }
-
-    
 }
 
-@media  (max-width: 899px){
-    .picture-frame{
+@media (max-width: 899px) {
+
+    .picture-frame {
         display: none;
     }
 
-    .picture-section{
+    .picture-section {
         display: none;
     }
 
-    .green-line{
+    .green-line {
         display: none;
     }
 
-    .about-me-section{
-        >div{
+    .about-me-section {
+        >div {
             width: 100%;
-        };
+        }
     }
-    
 }
 
-@media  (max-width: 749px){
-    .text-section{
-        >h1{
+@media (min-width: 880px) {
+
+    .about-me-section {
+
+        background-image: none;
+    }
+}
+
+@media (max-width: 749px) {
+
+    .about-me-section {
+        background-size: 50% 75%;
+    }
+
+    .text-section {
+        >h1 {
             font-size: 50px;
         }
     }
 }
 
-@media  (max-width: 449px){
-    .text-section{
-        >h1{
+@media (max-width: 449px) {
+
+    .text-section {
+        >h1 {
             font-size: 40px;
         }
     }

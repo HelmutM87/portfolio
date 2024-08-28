@@ -1,30 +1,13 @@
-// .above-the-fold {
-//     background-image: url('./../../../assets/img/Photo shadows.svg');
-//     background-position: left;
-
-//     height: 100vh;
-//     max-width: 1440;
-//     display: flex;
-//     flex-direction: column;
-//     align-content: center;
-//     align-items: center;
-// }
-
 .above-the-fold {
     background-image: url('./../../../assets/img/Photo shadows.svg');
     background-position: left;
-    background-repeat: no-repeat; // Hintergrundbild wird nicht wiederholt
-    background-size: 50%; // Passt das Hintergrundbild an die Größe des Containers an
-    // height: 100vh;
-    // max-width: 1440px;
+    background-repeat: no-repeat;
+    background-size: 50%;
     display: flex;
     flex-direction: column;
-    // align-content: center;
-    // align-items: center;
     width: 100%;
     max-width: 1920px;
 }
-
 
 .above-the-fold-content {
     display: flex;
@@ -44,7 +27,6 @@
 }
 
 .hero {
-    // background-image: url('./../../../assets/img/Photo shadows.svg');
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -53,51 +35,32 @@
     width: 50%;
 }
 
-.hero>img {
-    // max-width: 100%;
-    // /* Optional: Bildgröße begrenzen */
-    // height: auto;
-    // /* Sicherstellen, dass das Bild die richtige Proportion hat */
-    // overflow: hidden;
-}
-
-
-
 .frame-side {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    // margin-right: 32px;
 }
 
 .frame {
     display: flex;
     align-items: center;
-    // margin: 32px;
     justify-content: center;
-
 }
 
 .first-frame-section {
-
-
-
-
     >h2 {
         transform: rotate(270deg);
         color: white;
         font-size: 60px;
         font-weight: 400;
     }
-
 }
 
 .second-frame-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
     text-align: center;
 
@@ -111,18 +74,13 @@
         font-weight: 400;
         font-size: 62px;
     }
-
 }
 
 .lets-talk-button {
     position: absolute;
-    /* Ermöglicht es dem Button, sich unabhängig von den anderen Elementen zu bewegen */
     bottom: -100px;
-    /* Platziert den Button am unteren Rand der Sektion */
     left: 50%;
-    /* Zentriert den Button horizontal */
     transform: translateX(-50%);
-    /* Korrigiert die Verschiebung, um den Button exakt zu zentrieren */
     z-index: 0;
     border-radius: 10px;
     border-style: none;
@@ -137,18 +95,14 @@
     &:hover {
         background-color: rgba(151, 71, 255, 1);
         padding: 20px 35px;
-        /* Erhöht das Padding beim Hover */
     }
 }
-
-
 
 .above-the-fold-bottom-bar {
     color: white;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    // margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 32px;
 }
@@ -156,7 +110,6 @@
 .purple-line {
     color: rgba(151, 71, 255, 1);
     width: 100px;
-    // border: 4px;
     border-style: solid;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -166,10 +119,11 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    >a{
-        &:hover{
+
+    >a {
+        &:hover {
             cursor: pointer;
-    filter: drop-shadow(0px 0px 4px #FFFFFF);
+            filter: drop-shadow(0px 0px 4px #FFFFFF);
         }
     }
 }
@@ -186,68 +140,38 @@
     }
 }
 
-@media(max-height: 1159px){
-.border{
+@media(max-height: 1159px) {
+    .border {
         margin-top: -700px;
         height: 700px;
     }
 
     .above-the-fold {
-        
+
         background-position: left bottom;
         background-size: 48%;
-        // background-size: 50%; // Passt das Hintergrundbild an die Größe des Containers an
-        // width: 100%;
-        // max-width: 1920px;
     }
 }
 
-// @media(max-height: 1029px){
-//     .border{
-//             margin-top: -680px;
-//             height: 680px;
-//         }
-//         .above-the-fold {
-        
-//             // background-position: left bottom;
-//             background-size: 44%;
-//             // background-size: 50%; // Passt das Hintergrundbild an die Größe des Containers an
-//             // width: 100%;
-//             // max-width: 1920px;
-//         }
-//     }
+@media (max-width: 1920px) {
 
-    // @media(max-height: 999px){
-    //     .border{
-    //         margin-top: -670px;
-    //         height: 675px;
-    //         }
-    //     }
-
-
-@media (max-width: 1920px){
-
-    .border{
+    .border {
         margin-top: -680px;
         height: 680px;
     }
 }
 
-@media (max-width: 1850px){
-    // .border{
-    //     margin-top: -700px;
-    //     height: 700px;
-    // }
-
-    .frame{
+@media (max-width: 1850px) {
+    .frame {
         justify-content: flex-start;
     }
 
-    .second-frame-section{
-        >h1{
+    .second-frame-section {
+        >h1 {
             font-size: 60px;
         }
-        >h2{
+
+        >h2 {
             font-size: 46px;
         }
     }
@@ -255,54 +179,26 @@
 
 @media (max-width: 1529px) {
 
-.border{
+    .border {
         margin-top: -600px;
         height: 600px;
     }
-
-    // .first-frame-section {
-    //     width: 90px;
-    //     display: flex;
-    //     justify-content: flex-end;
-
-    //     >h2 {
-    //         font-size: 40px;
-    //     }
-    // }
-
-    // .second-frame-section {
-    //     display: flex;
-
-    //     >h1 {
-    //         font-size: 60px;
-    //     }
-
-    //     >h2 {
-    //         font-size: 46px;
-    //     }
-    // }
 }
 
 @media (max-width: 1359px) {
 
-.border{
-    margin-top: -500px;
-    height: 500px;
-}
+    .border {
+        margin-top: -500px;
+        height: 500px;
+    }
 
     .first-frame-section {
-    //     width: 90px;
-    //     display: flex;
-    //     justify-content: flex-end;
-
         >h2 {
             font-size: 40px;
         }
     }
 
     .second-frame-section {
-    //     display: flex;
-
         >h1 {
             font-size: 50px;
         }
@@ -312,80 +208,25 @@
         }
     }
 
-    .above-the-fold{
+    .above-the-fold {
         background-position: left center;
         background-size: 50%;
     }
-
-    // .hero {
-    //     height: 1000px;
-    //     width: auto;
-    // }
-
 }
 
-
-
-@media (max-width: 1254px) {
-//     .first-frame-section {
-//         width: 90px;
-//         display: flex;
-//         justify-content: flex-end;
-
-//         >h2 {
-//             font-size: 40px;
-//         }
-//     }
-
-//     .second-frame-section {
-//         display: flex;
-
-//         >h1 {
-//             font-size: 50px;
-//         }
-
-//         >h2 {
-//             font-size: 39px;
-//         }
-
-
-    // }
-
-//     .hero {
-//         height: 1000px;
-//         width: auto;
-//     }
-
-//     .frame {
-//         margin: 32px 32px 32px 0;
-//     }
-
-}
-
-@media  (max-width: 1234px) {
-    .above-the-fold{
+@media (max-width: 1234px) {
+    .above-the-fold {
         background-position: left center;
         background-size: 60%;
     }
-//     .above-the-fold-content {
-//         width: 100;
-//         display: flex;
-//         justify-content: space-between;
-//     }
 
     .first-frame-section {
-        // width: 64px;
-        // display: flex;
-        // justify-content: flex-end;
-
         >h2 {
             font-size: 34px;
         }
     }
 
     .second-frame-section {
-//         display: flex;
-
         >h1 {
             font-size: 40px;
         }
@@ -396,165 +237,94 @@
 
     }
 
-    .lets-talk-button{
+    .lets-talk-button {
         font-size: 20px;
     }
-
-//     .hero {
-//         height: 950px;
-//         width: auto;
-//     }
-
-    // .lets-talk-button {
-    //     padding: 10px 10px;
-    // }
-
-//     .border {
-//         margin-top: -448px;
-//     }
-
-//     .frame {
-//         margin: 32px 32px 32px 0;
-//     }
 }
 
-// @media (max-width: 999px){
-//     .hero{
-//         height: 880px;
-//     }
-
-//     .frame{
-//         margin: 32px 32px 32px 0;
-//     }
-
-//     .first-frame-section {
-//         width: 64px;
-//         display: flex;
-//         justify-content: flex-end;
-
-//         >h2{
-//             font-size: 28px;
-//         }
-//     }
-
-//     .second-frame-section{
-//         display: flex;
-
-//         >h1{
-//             font-size: 30px;
-//         }
-
-//         >h2{
-//             font-size: 23px;
-//         }
-//     }
-//     .lets-talk-button{
-//         padding: 10px 10px;
-//     }
-
-//     .border{
-//         margin-top: -400px;
-//     }
-// }
-
-@media (max-width: 945px){
-    .hero{
+@media (max-width: 945px) {
+    .hero {
         height: 880px;
-        >img{
+
+        >img {
             height: fit-content;
-    overflow: hidden;
-    padding-top: 70px;
+            overflow: hidden;
+            padding-top: 70px;
         }
     }
 
-    .above-the-fold{
+    .above-the-fold {
         background-size: 55%;
     }
 
-//     .frame{
-//         margin: 32px 32px 32px 0;
-//     }
-
     .first-frame-section {
-//         width: 64px;
-//         display: flex;
-//         justify-content: flex-end;
-
-        >h2{
+        >h2 {
             font-size: 27px;
         }
     }
 
-    .second-frame-section{
-//         display: flex;
-//         width: 237px;
-        >h1{
+    .second-frame-section {
+        >h1 {
             font-size: 30px;
         }
 
-        >h2{
+        >h2 {
             font-size: 23px;
         }
     }
-    .lets-talk-button{
+
+    .lets-talk-button {
         font-size: 20px;
         width: max-content;
     }
 
-    .border{
+    .border {
         margin-top: -480px;
         height: 540px;
     }
 }
 
-@media  (max-width: 799px){
+@media (max-width: 799px) {
 
-    .above-the-fold{
-        // background-image: none;
+    .above-the-fold {
         background-position: center;
         background-size: contain;
-        // margin-top: 200px;
     }
 
-    .above-the-fold-content{
-        // background-image: url('./../../../assets/img/Photo\ shadows.svg');
-        // background-size: 80%;
-        // background-repeat: no-repeat;
-        // background-position: center bottom;
+    .above-the-fold-content {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
 
-    .hero{
-        // height: 880px;
+    .hero {
         width: 80%;
-        >img{
+
+        >img {
             padding-top: 50px;
-    height: fit-content;
-    overflow: hidden;
+            height: fit-content;
+            overflow: hidden;
         }
     }
 
-    #email-adress{
+    #email-adress {
         display: none;
     }
 
-    .frame-side{
-
+    .frame-side {
         display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -220px;
-    width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -220px;
+        width: 80%;
     }
 
-    .scroll{
+    .scroll {
         display: none;
     }
 
-    .frame{
+    .frame {
         margin: 32px 32px 32px 0;
     }
 
@@ -563,113 +333,92 @@
         display: flex;
         justify-content: flex-end;
 
-        >h2{
+        >h2 {
             font-size: 28px;
         }
     }
 
-    .second-frame-section{
+    .second-frame-section {
         display: flex;
 
-        >h1{
-            // font-size: 53px;
+        >h1 {
             font-size: 40px;
         }
 
-        >h2{
-            // font-size: 41px;
+        >h2 {
             font-size: 31px;
         }
     }
-    .lets-talk-button{
+
+    .lets-talk-button {
         padding: 10px 10px;
     }
 
-    .border{
-        // margin-top: -440px;
-        // height: 600px;
-        // margin-top: -334px;
-        // height: 497px;
+    .border {
         margin-top: -373px;
         height: 500px;
     }
 }
 
-@media  (max-width: 749px){
-    
-
-    .frame-side{
+@media (max-width: 749px) {
+    .frame-side {
         margin-top: -240px;
     }
 
-.border{
-    margin-top: -355px;
+    .border {
+        margin-top: -355px;
         height: 498px;
-}
-    
+    }
+
 }
 
-@media  (max-width: 699px){
-
-    .frame-side{
+@media (max-width: 699px) {
+    .frame-side {
         width: 90%;
     }
 }
 
-@media (max-width: 549px){
-
-    .frame-side{
+@media (max-width: 549px) {
+    .frame-side {
         margin-top: -300px;
         width: 100%;
     }
 
-    .border{
+    .border {
         margin-top: -420px;
         height: 600px;
     }
-
-    
-
 }
 
-@media (max-width: 499px){
-    .frame-side{
+@media (max-width: 499px) {
+    .frame-side {
         margin-top: -380px;
-        
     }
 
-    .border{
+    .border {
         margin-top: -460px;
         height: 730px;
     }
 }
 
-@media (max-width: 449px){
-    .frame-side{
+@media (max-width: 449px) {
+    .frame-side {
         margin-top: -355px;
-        
+
     }
 
-    // .border{
-    //     margin-top: -460px;
-    //     height: 730px;
-    // }
-
-    .hero{
+    .hero {
         width: 100%;
-        // height: 800px;
     }
 
-    .second-frame-section{
+    .second-frame-section {
         display: flex;
 
-        >h1{
-            // font-size: 53px;
+        >h1 {
             font-size: 30px;
         }
 
-        >h2{
-            // font-size: 41px;
+        >h2 {
             font-size: 23px;
         }
     }
@@ -677,77 +426,68 @@
 
 
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
 
-    .first-frame-section{
-        >h2{
+    .first-frame-section {
+        >h2 {
             font-size: 23px;
         }
     }
 
-    .second-frame-section{
+    .second-frame-section {
         display: flex;
 
-        >h1{
-            // font-size: 53px;
+        >h1 {
             font-size: 26px;
         }
 
-        >h2{
-            // font-size: 41px;
+        >h2 {
             font-size: 20px;
         }
     }
 
-    .purple-line{
+    .purple-line {
         width: 68px;
     }
-    .lets-talk-button{
+
+    .lets-talk-button {
         font-size: 18px;
     }
-    .hero{
+
+    .hero {
 
         height: 750px;
-        
-        // >img{
-        //     height: 50%;
-        //     padding-top: 80px;
-        // }
     }
 
-    .border{
+    .border {
         margin-top: -350px;
         height: 500px;
     }
-
-
 }
 
-@media (max-width: 345px){
-//     // .frame{
-//     //     margin: 1px;
-//     // }
+@media (max-width: 345px) {
 
-    .second-frame-section{
-        >h1{
+    .second-frame-section {
+        >h1 {
             font-size: 24px;
         }
-        >h2{
-            font-size: 18px;
-        }
 
-    }
-    .first-frame-section{
-        >h2{
+        >h2 {
             font-size: 18px;
         }
     }
 
-    .lets-talk-button{
+    .first-frame-section {
+        >h2 {
+            font-size: 18px;
+        }
+    }
+
+    .lets-talk-button {
         font-size: 16px;
     }
 
-    .purple-line{
+    .purple-line {
         width: 48px;
     }
 }

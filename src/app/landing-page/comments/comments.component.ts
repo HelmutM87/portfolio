@@ -1,44 +1,3 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-comments',
-//   standalone: true,
-//   templateUrl: './comments.component.html',
-//   styleUrls: ['./comments.component.scss']
-// })
-// export class CommentsComponent {
-//   // JSON-Array mit den Teammitgliedern
-//   teamMembers = [
-//     {
-//       name: 'Raphaela Multhaup',
-//       photo: './../../../assets/img/raphaela_multhaup.jpg',
-//       review: 'Raphaela always brings fresh ideas and a sharp eye for frontend details to the table. Her organized approach and dependability make her a great teammate.'
-//     },
-//     {
-//       name: 'Grischa Tänzer',
-//       photo: './../../../assets/img/grischa-portrait.jpg',
-//       review: 'Helmut has a strong ability to think outside the box and bring innovative solutions. His technical skills and dedication are invaluable to the team.'
-//     }
-//   ];
-
-//   currentIndex = 0;
-
-//   // Funktion zum Anzeigen des nächsten Teammitglieds
-//   showNextMember() {
-//     this.currentIndex = (this.currentIndex + 1) % this.teamMembers.length;
-//   }
-
-//   // Funktion zum Anzeigen des vorherigen Teammitglieds
-//   showPreviousMember() {
-//     this.currentIndex = (this.currentIndex - 1 + this.teamMembers.length) % this.teamMembers.length;
-//   }
-
-//   // Aktuell angezeigtes Teammitglied
-//   get currentMember() {
-//     return this.teamMembers[this.currentIndex];
-//   }
-// }
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -47,10 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.scss'],
-  imports: [CommonModule]  // Importiere das CommonModule
+  imports: [CommonModule] 
 })
 export class CommentsComponent {
-  // JSON-Array mit den Teammitgliedern
   teamMembers = [
     {
       name: 'Raphaela Multhaup',
@@ -66,17 +24,17 @@ export class CommentsComponent {
 
   currentIndex = 0;
 
-  // Funktion zum Anzeigen des nächsten Teammitglieds
+
   showNextMember() {
     this.currentIndex = (this.currentIndex + 1) % this.teamMembers.length;
   }
 
-  // Funktion zum Anzeigen des vorherigen Teammitglieds
+  
   showPreviousMember() {
     this.currentIndex = (this.currentIndex - 1 + this.teamMembers.length) % this.teamMembers.length;
   }
 
-  // Aktuell angezeigtes Teammitglied
+  
   get currentMember() {
     return this.teamMembers[this.currentIndex];
   }

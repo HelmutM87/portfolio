@@ -1,11 +1,14 @@
 .comments-section {
+    background-image: url('./../../../assets/img/Green\ shadow\ 2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     max-width: 1920px;
     width: 100%;
     margin-top: 100px;
     flex-direction: column;
     display: flex;
     color: white;
-    // justify-content: flex-end;
     gap: 48px;
 }
 
@@ -36,7 +39,6 @@
 .img-section {
     display: flex;
     align-items: center;
-
 }
 
 .picture-frame {
@@ -45,7 +47,6 @@
     max-width: 270px;
     border: 4px;
     border-style: solid;
-    // border-color: rgba(112, 230, 28, 1);
     border-color: rgba(151, 71, 255, 1);
     border-radius: 500px;
     background-color: rgba(20, 29, 47, 1);
@@ -54,10 +55,7 @@
     >img {
         display: block;
         margin: auto;
-        // margin-bottom: -10px;
-        // margin-left: -40px;
         max-width: 120%;
-        /* Optional: Bildgröße begrenzen */
         height: auto;
     }
 }
@@ -68,9 +66,7 @@
     width: 100px;
 }
 
-.pseudo-div{
-    background-color: rgba(20, 29, 47, 1);
-    // background-color: rgba(151, 71, 255, 1);
+.pseudo-div {
     height: 4px;
     width: 30%;
 }
@@ -86,15 +82,12 @@
     gap: 48px;
 }
 
-
 .nav-arrows {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-
-
 
 .dot {
     background-color: rgba(151, 71, 255, 1);
@@ -122,12 +115,10 @@
     transform: rotate(90deg);
 }
 
-/* Ring standardmäßig verstecken */
 .ring {
     stroke: none;
 }
 
-/* Ring beim Hover anzeigen */
 .arrow {
     :hover .ring {
         stroke: rgba(112, 230, 28, 1);
@@ -146,9 +137,18 @@
     }
 }
 
-
+@media(min-width:880px) {
+    .comments-section {
+        background-image: none;
+    }
+}
 
 @media(max-width:879px) {
+
+    .comments-section {
+        background-size: contain;
+    }
+
     .text-section {
         max-width: 300px;
     }
@@ -159,24 +159,20 @@
         max-width: 70%;
     }
 
-    .text-img-section{
+    .text-img-section {
         flex-direction: column-reverse;
-    align-items: center;
-    margin-left: 0;
+        align-items: center;
+        margin-left: 0;
     }
 
-    .img-section{
+    .img-section {
         display: flex;
-    align-items: center;
-    /* align-items: end; */
-    width: 100%;
-    justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
     }
-    .purple-line-img{
+
+    .purple-line-img {
         width: 30%;
     }
-}
-
-@media(max-width:409px){
-
 }

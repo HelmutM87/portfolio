@@ -17,18 +17,10 @@ export class ContactComponent {
     name: "",
     email: "",
     message: "",
-    privacyPolicy: false // Neue Eigenschaft hinzugefügt
+    privacyPolicy: false
   }
 
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.valid && ngForm.submitted) {
-  //     console.log(this.contactData);
-  //   }
-  // }
-
-  // mailTest = true;
   mailTest = false;
-
 
   post = {
     endPoint: 'https://helmut-martens.com/sendMail.php',
@@ -41,38 +33,15 @@ export class ContactComponent {
     },
   };
 
-  // post = {
-  //   endPoint: 'https://portfolio.helmut-martens.com/sendMail.php',
-  //   body: (payload: any) => JSON.stringify(payload),
-  //   options: {
-  //     headers: {
-  //       'Content-Type': 'application/json',  // Verwenden Sie 'application/json'
-  //       responseType: 'text',
-  //     },
-  //   },
-  // };
-
-  // endPoint: 'https://helmut-martens.com/sendMail.php',
-
+  
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: (response) => {
-
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
+          next: (response) => { ngForm.resetForm(); },
+          error: (error) => { console.error(error); },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
-    }
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) { ngForm.resetForm(); }
   }
 }
-
-
-

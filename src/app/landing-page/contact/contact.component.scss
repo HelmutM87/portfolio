@@ -1,4 +1,7 @@
 .contact-component {
+    background-image: url('./../../../assets/img/Purple\ shadow\ 4.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
     max-width: 1920px;
     width: 100%;
     color: white;
@@ -70,8 +73,6 @@
             border-color: rgba(112, 230, 28, 1);
             cursor: pointer;
         }
-
-
     }
 
     >textarea {
@@ -115,14 +116,13 @@
         }
     }
 
-    >span{
+    >span {
         color: #E61C40;
         font-size: 14px;
-        text-align: left; /* Text links ausrichten */
-        width: 100%; /* Span nimmt die gesamte Breite ein */
-        display: block; /* Sicherstellen, dass das Span ein Block-Element ist */
+        text-align: left;
+        width: 100%;
+        display: block;
     }
-
 }
 
 .privacy-policy-checkbox {
@@ -130,12 +130,9 @@
     gap: 10px;
     align-items: center;
 
-
-
     input[type="checkbox"] {
         width: 18px;
         height: 18px;
-        // appearance: none; /* Entfernt das Standardstyling */
         background-color: rgba(20, 29, 47, 1);
         border: 1px solid rgba(112, 230, 28, 1);
         border-radius: 3px;
@@ -143,32 +140,13 @@
         position: relative;
         display: inline-block;
 
-        // &:checked {
-        //     background-color: rgba(112, 230, 28, 1);
-        // }
-
         &:hover {
             border-color: rgba(112, 230, 28, 1);
         }
-
-        // &:checked::before {
-        //     content: '';
-        //     position: absolute;
-        //     left: 4px;
-        //     top: 4px;
-        //     width: 10px;
-        //     height: 10px;
-        //     background-color: rgba(20, 29, 47, 1);
-        // }
     }
 }
 
-
-
-
-
 .scroll-to-top-button-box {
-
     width: 100%;
 
     >div {
@@ -179,13 +157,10 @@
         >img {
             &:hover {
                 content: url('./../../../assets/img/scroll-to-top-arrow-green.svg');
-                /* Ändert die Quelle des Bildes beim Hover */
                 cursor: pointer;
             }
         }
     }
-
-
 }
 
 @media(max-width:1049px) {
@@ -197,6 +172,18 @@
 
     .purple-line {
         width: 50%;
+    }
+}
+
+@media(min-width:880px) {
+    .contact-component {
+        background-image: none;
+    }
+}
+
+@media(max-width:879px) {
+    .contact-component {
+        background-size: 50%;
     }
 }
 
@@ -249,6 +236,4 @@
     .contact-component {
         font-size: 14px;
     }
-
-    
 }

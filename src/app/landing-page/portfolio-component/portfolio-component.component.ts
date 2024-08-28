@@ -10,5 +10,5 @@ import { Component } from '@angular/core';
 export class PortfolioComponentComponent {
   goToUrl(url: string) {
     window.location.href = url;
-}
+  }
 }

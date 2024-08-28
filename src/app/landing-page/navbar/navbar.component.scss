@@ -1,13 +1,10 @@
-
-
-.d-none{
+.d-none {
     display: none !important;
 }
 
 .no-scroll {
     overflow: hidden;
-  }
-  
+}
 
 .navbar {
     background-color: rgba(20, 29, 47, 1);
@@ -47,7 +44,6 @@
     }
 }
 
-
 #burger-menu-button {
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -77,27 +73,27 @@
     transform: rotate(-45deg) translate(0px, -5px);
 }
 
-.menu-overlay-bg{
-    background-color:#141D2F;
+.menu-overlay-bg {
+    background-color: #141D2F;
     opacity: 80%;
-     z-index: 4;
-     position: fixed;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-overlay{
+.menu-overlay {
     display: flex;
     flex-direction: column;
     gap: 29px;
 
-    >a{
-        >div{
+    >a {
+        >div {
             font-size: 23px;
             color: white;
         }
@@ -105,8 +101,9 @@
 }
 
 .burger-menu {
-    position: relative; 
+    position: relative;
     z-index: 6;
+
     >svg {
         color: white;
         z-index: 6;
@@ -114,8 +111,7 @@
 }
 
 @media (min-width: 451px) {
-
-    #burger-menu-button{
+    #burger-menu-button {
         display: none;
     }
 }
@@ -123,16 +119,14 @@
 @media (max-width: 450px) {
     .navbar {
         width: 99%;
+
         >div {
-            // padding: 32px;
-            padding: 8px; /* Beispiel: Kleinere Padding für kleinere Bildschirme */
+            padding: 8px;
             flex-wrap: wrap;
+
             >a {
                 display: none;
             }
         }
-
     }
 }
-
-

@@ -1,21 +1,24 @@
+.background {
+    background-color: rgba(20, 29, 47, 1);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 .text-container {
+    width: 100%;
+    max-width: 1920px;
     height: calc(100vh - 268px);
     color: white;
-    background-color: rgba(20, 29, 47, 1);
     padding: 32px;
-    >p{
-        >a{
+
+    >p {
+        >a {
             color: white;
-            &:hover{
+
+            &:hover {
                 color: rgba(112, 230, 28, 1);
             }
         }
     }
-  }
-
-//   @media screen and (min-width: 900px){
-//     .text-container {
-//         margin: 160px 60px 0 310px;
-//         max-width: 1600px;
-//       }
-//   }
+}

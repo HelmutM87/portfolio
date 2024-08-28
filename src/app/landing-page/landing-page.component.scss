@@ -3,23 +3,34 @@
 }
 
 .landing-page-background {
-    min-height: 100vh;
     background-color: rgba(20, 29, 47, 1);
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    // align-items: center;
+}
+
+.shadows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./../../assets/img/Shadows\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
 }
 
 app-navbar {
     display: flex;
     justify-content: center;
-
 }
 
 app-above-the-fold {
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1920px;
 }
 
 app-about-me-component {
@@ -50,3 +61,8 @@ app-contact {
     justify-content: center;
 }
 
+@media(max-width:879px) {
+    .shadows {
+        background-image: none;
+    }
+}

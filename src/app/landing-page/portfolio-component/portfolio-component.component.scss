@@ -1,4 +1,7 @@
 .portfolio-section {
+    background-image: url('./../../../assets/img/Purple\ shadow\ 3.png');
+    background-repeat: no-repeat;
+    background-position: center left;
     max-width: 1920px;
     width: 100%;
     color: white;
@@ -67,7 +70,6 @@
         padding-bottom: 15px;
 
         &:hover {
-
             background-color: rgba(112, 230, 28, 1);
             cursor: pointer;
         }
@@ -80,7 +82,6 @@
     border-color: rgba(112, 230, 28, 1) !important;
 
     &:hover {
-
         background-color: rgba(112, 230, 28, 1) !important;
         cursor: pointer;
     }
@@ -124,22 +125,14 @@
     justify-content: center;
 }
 
-
-
 @media(max-width: 1149px) {
-    // .portfolio-project {
-    //     height: 350px;
-    // }
-
-    // .secon
-
     .img {
         >img {
             max-height: 300px;
         }
     }
 
-    .headline{
+    .headline {
         >h1 {
             font-size: 80px;
         }
@@ -147,38 +140,48 @@
 }
 
 @media(max-width: 949px) {
-    .button-box{
-        >button{
+    .button-box {
+        >button {
             padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
 
-    .headline{
+    .headline {
         >h1 {
             font-size: 70px;
         }
     }
 }
 
-@media(max-width: 879px){
-    .portfolio-project{
+@media (min-width: 880px) {
+    .portfolio-section {
+        background-image: none;
+    }
+}
+
+@media(max-width: 879px) {
+    .portfolio-section {
+        background-size: 50%;
+    }
+
+    .portfolio-project {
         flex-direction: column;
         align-items: center;
     }
 
-    .second-box{
+    .second-box {
         flex-direction: column;
         align-items: center;
     }
 
-    .text{
+    .text {
         align-items: center;
     }
 
-    .second-text-box{
+    .second-text-box {
         align-items: center;
     }
 
@@ -188,17 +191,17 @@
         }
     }
 
-    .headline{
+    .headline {
         >h1 {
             font-size: 60px;
         }
     }
 }
 
-@media(max-width: 599px){
-
-    .headline{
+@media(max-width: 599px) {
+    .headline {
         gap: 17px;
+
         >h1 {
             font-size: 50px;
         }
@@ -209,11 +212,10 @@
             max-height: 350px;
         }
     }
-
 }
 
-@media(max-width: 499px){
-    .headline{
+@media(max-width: 499px) {
+    .headline {
         >h1 {
             font-size: 45px;
         }
@@ -227,24 +229,23 @@
 }
 
 @media(max-width: 399px) {
-
-    .button-box{
-        >button{
-            
+    .button-box {
+        >button {
             font-size: 16px;
             padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
     }
-    
-    .headline{
+
+    .headline {
         gap: 10px;
         >h1 {
             font-size: 40px;
         }
     }
+
     .img {
         >img {
             max-height: 200px;
