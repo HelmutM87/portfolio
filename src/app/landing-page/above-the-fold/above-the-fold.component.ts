@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './above-the-fold.component.scss'
 })
 export class AboveTheFoldComponent {
-
+  openInNewTab(url: string) {
+    window.open(url, '_blank');
+  }
 }

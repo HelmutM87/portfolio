@@ -2,8 +2,8 @@
     <div id="footer" class="footer">
 
         <div class="left-side">
-            <img src="./../../../assets/img/logo-hm.png" alt="">
-            <a id="impressum-name" href="imprint">Impressum</a>
+            <a href="#top"><img src="./../../../assets/img/logo-hm.png" alt=""></a>
+            <a id="impressum-name" [routerLink]="['/imprint']">Impressum</a>
         </div>
 
         <div class="middle">
@@ -11,13 +11,16 @@
         </div>
 
         <div class="right-side">
-            <a href="https://github.com/HelmutM87"><img src="/assets/img/Property 1=Default.svg" alt="github"></a>
+            <img (click)="openInNewTab('https://github.com/HelmutM87')" src="/assets/img/Property 1=Default.svg"
+                alt="github">
             <a href="mailto:info@helmut-martens.com"><img src="/assets/img/Property 1=Default (1).svg" alt="email"></a>
-            <a href="https://www.linkedin.com/in/helmut-martens-2174921b2"><img src="/assets/img/Vector (3).svg"
-                    alt=""></a>
+            <img (click)="openInNewTab('https://www.linkedin.com/in/helmut-martens-2174921b2')"
+                src="/assets/img/Vector (3).svg" alt="">
         </div>
 
-        <a id="impressum-icon" href="imprint">Impressum</a>
+        <!-- <a id="impressum-icon" href="imprint">Impressum</a> -->
+        <a id="impressum-icon" [routerLink]="['/imprint']">Impressum</a>
+
 
     </div>
 </div>

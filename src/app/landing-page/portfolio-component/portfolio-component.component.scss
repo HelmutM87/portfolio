@@ -22,17 +22,49 @@
     gap: 17px;
 }
 
-.img {
+.img-join {
     display: flex;
     justify-content: center;
     width: 480px;
     max-width: 100%;
-
+    animation: slideInFromLeft 500ms ease-out forwards;
+    
+    opacity: 0; /* Unsichtbar zu Beginn */
+    transform: translateX(-100%); /* Startposition außerhalb des Viewports */
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+    transition: transform 0.3s ease-in-out;
     >img {
         max-height: 400px;
         max-width: 100%;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
 }
+
+.img-epl {
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    max-width: 100%;
+    animation: slideInFromRight 500ms ease-out forwards; 
+
+    opacity: 0; /* Unsichtbar zu Beginn */
+    transform: translateX(+100%); /* Startposition außerhalb des Viewports */
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+    transition: transform 0.3s ease-in-out;
+    >img {
+        max-height: 400px;
+        max-width: 100%;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
 
 .text {
     display: flex;
@@ -123,6 +155,28 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); /* Startposition außerhalb des Viewports (von links) */
+        opacity: 0; /* Optional: Element ist zu Beginn unsichtbar */
+    }
+    100% {
+        transform: translateX(0); /* Endposition im Viewport */
+        opacity: 1; /* Optional: Element wird sichtbar */
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%); /* Startposition außerhalb des Viewports (von links) */
+        opacity: 0; /* Optional: Element ist zu Beginn unsichtbar */
+    }
+    100% {
+        transform: translateX(0); /* Endposition im Viewport */
+        opacity: 1; /* Optional: Element wird sichtbar */
+    }
 }
 
 @media(max-width: 1149px) {

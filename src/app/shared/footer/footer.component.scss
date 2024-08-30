@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    border-top: 4px solid rgba(112, 230, 28, 1);
 }
 
 h2 {
@@ -19,7 +20,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     color: white;
-    border-top: 4px solid rgba(112, 230, 28, 1);
+    // border-top: 4px solid rgba(112, 230, 28, 1);
     height: 200px;
 }
 
@@ -28,12 +29,21 @@ h2 {
     flex-direction: column;
     align-items: center;
     >a {
+        &:hover{
+           color: rgba(112, 230, 28, 1);
+        }
         color: white;
+        >img{
+            max-height: 80px;
+            &:hover {
+                transition: 125ms;
+                cursor: pointer;
+                filter: drop-shadow(0px 0px 4px #FFFFFF);
+            }
+        }
     }
 
-    >img{
-        max-height: 80px;
-    }
+    
 }
 
 .middle {
@@ -48,6 +58,13 @@ h2 {
     justify-content: space-between;
 
     >a {
+        &:hover {
+            cursor: pointer;
+            filter: drop-shadow(0px 0px 4px #FFFFFF);
+        }
+    }
+
+    >img {
         &:hover {
             cursor: pointer;
             filter: drop-shadow(0px 0px 4px #FFFFFF);
