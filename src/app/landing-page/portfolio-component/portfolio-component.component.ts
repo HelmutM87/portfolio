@@ -14,11 +14,13 @@
 // }
 
 import { Component, ElementRef, ViewChildren, AfterViewInit, QueryList } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio-component',
   standalone: true,
-  imports: [],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './portfolio-component.component.html',
   styleUrls: ['./portfolio-component.component.scss']
 })

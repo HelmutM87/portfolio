@@ -136,6 +136,16 @@
     }
 }
 
+.language{
+    color: white;
+    >a{
+        &:hover{
+            cursor: pointer;
+            color: rgba(112, 230, 28, 1);
+        }
+    }
+}
+
 @media (min-width: 451px) {
     #burger-menu-button {
         display: none;

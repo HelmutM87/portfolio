@@ -1,10 +1,10 @@
 <div id="comments-section" class="comments-section">
   <div class="text-img-section">
     <div class="text-section">
-      <p>{{ currentMember.review }}</p>
+      <p>{{ currentMember.reviewKey | translate }}</p>
       <div class="comment-editor-section">
         <div class="purple-line-text"></div>
-        <p>{{ currentMember.name }} - Team Partner</p>
+        <p>{{ currentMember.name }} - {{ 'TEAM_PARTNER' | translate }}</p>
       </div>
     </div>
 

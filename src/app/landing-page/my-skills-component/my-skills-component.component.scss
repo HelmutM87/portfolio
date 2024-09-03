@@ -22,6 +22,10 @@
 
     >img {
         position: relative;
+        top: 100px;
+        /* Initialer Abstand vom oberen Rand */
+        opacity: 0;
+        /* Unsichtbar, bevor die Animation startet */
 
         &:hover {
             animation: push-up-and-down ease-in-out 300ms;
@@ -32,6 +36,11 @@
         color: white;
     }
 }
+
+.fall {
+    animation: fall 2s ease-in-out forwards;
+    opacity: 1; /* Sichtbar, wenn die Animation startet */
+  }
 
 .skills-text-box {
     display: flex;
@@ -114,6 +123,20 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: rgba(151, 71, 255, 1);
+}
+
+@keyframes fall {
+    0% {
+        top: -100px;
+    }
+
+    70% {
+        top: calc(100vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 80px);
+    }
 }
 
 @keyframes push-up-and-down {

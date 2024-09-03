@@ -5,11 +5,13 @@ import { MySkillsComponentComponent } from "./my-skills-component/my-skills-comp
 import { PortfolioComponentComponent } from './portfolio-component/portfolio-component.component';
 import { CommentsComponent } from './comments/comments.component';
 import { ContactComponent } from './contact/contact.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
   imports: [
+    RouterModule,
     AboveTheFoldComponent,
     AboutMeComponentComponent,
     MySkillsComponentComponent,
