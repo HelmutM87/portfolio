@@ -35,6 +35,7 @@
     "NAME_PLACEHOLDER": "Your name",
     "EMAIL_PLACEHOLDER": "your email",
     "MESSAGE_PLACEHOLDER": "Your message",
+    "EMAIL_SENT": "Thank you - your message has been sent!",
     "TEAM_PARTNER": "Team Partner",
     "REVIEW_RAPHAELA": "Helmut always brings fresh ideas and a sharp eye for frontend details to the table. His organized approach and dependability make him a great teammate.",
     "REVIEW_GRISCHA": "I really enjoyed working with Helmut on our frontend project. He was always friendly and open to new ideas. Collaborating with him was not only productive but also very pleasant. His ability to work as part of a team and respond to the needs of the group greatly contributed to the success of our project.",

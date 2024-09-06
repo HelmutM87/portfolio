@@ -1,3 +1,7 @@
+h1{
+    font-size: 78px;
+}
+
 .my-skills {
     background-image: url('./../../../assets/img/green-shadow-my-skills.png');
     background-repeat: no-repeat;
@@ -11,7 +15,6 @@
     width: 60%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     gap: 48px;
 }
 
@@ -19,28 +22,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    >img {
-        position: relative;
-        top: 100px;
-        /* Initialer Abstand vom oberen Rand */
-        opacity: 0;
-        /* Unsichtbar, bevor die Animation startet */
-
-        &:hover {
-            animation: push-up-and-down ease-in-out 300ms;
-        }
-    }
+    width: 100px;
 
     >p {
         color: white;
+        text-align: center;
     }
 }
-
-.fall {
-    animation: fall 2s ease-in-out forwards;
-    opacity: 1; /* Sichtbar, wenn die Animation startet */
-  }
 
 .skills-text-box {
     display: flex;
@@ -48,16 +36,12 @@
     text-align: end;
 }
 
-.first-box {
-    display: flex;
-    flex-direction: column;
-}
-
 .second-box {
     margin-right: 100px;
 
     >h2 {
         font-size: 32px;
+        padding: 0 32px;
     }
 
     >a {
@@ -85,7 +69,13 @@
         margin-bottom: 40px;
         font-weight: 700;
         font-size: 16px;
+        padding: 0 32px;
     }
+}
+
+.pseudo-box{
+    height: 10px;
+    margin-bottom: 10px;
 }
 
 .headline-section {
@@ -93,10 +83,6 @@
     align-items: center;
     justify-content: flex-end;
     gap: 32px;
-
-    >h1 {
-        font-size: 90px;
-    }
 }
 
 .headline-section-mobile {
@@ -105,10 +91,6 @@
     align-items: center;
     justify-content: flex-end;
     gap: 32px;
-
-    >h1 {
-        font-size: 60px;
-    }
 }
 
 #i-have-gained-text-mobile {
@@ -125,19 +107,8 @@
     background-color: rgba(151, 71, 255, 1);
 }
 
-@keyframes fall {
-    0% {
-        top: -100px;
-    }
 
-    70% {
-        top: calc(100vh - 100px);
-    }
-
-    100% {
-        top: calc(100vh - 80px);
-    }
-}
+  
 
 @keyframes push-up-and-down {
     0% {
@@ -153,13 +124,34 @@
     }
 }
 
-
-@media (max-width: 1199px) {
-    .headline-section {
-        >h1 {
-            font-size: 70px;
-        }
+@media (max-width: 1849px){
+    h1{
+        font-size: 72px;
     }
+}
+
+@media (max-width: 1609px){
+    h1{
+        font-size: 66px;
+    }
+}
+
+@media (max-width: 1409px){
+    h1{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1249px){
+    h1{
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1199px) {
+        >h1 {
+            font-size: 48px;
+        }
 }
 
 @media (min-width: 950px) {
@@ -228,6 +220,10 @@
     .my-skills {
         background-size: 50% 75%;
     }
+
+    h1{
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 449px) {
@@ -235,10 +231,9 @@
         background-size: 50% 50%;
     }
 
-    .headline-section-mobile {
-        >h1 {
-            font-size: 50px;
-        }
+    h1 {
+        font-size: 26px;
+        
     }
 
     .second-box {
@@ -263,12 +258,10 @@
         width: 40px;
     }
 
-    .headline-section-mobile {
-        >h1 {
-            font-size: 40px;
-        }
+    h1 {
+        font-size: 23px;
     }
-
+    
     .skills-icon {
         >img {
             width: 40px;

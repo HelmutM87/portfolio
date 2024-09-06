@@ -1,21 +1,18 @@
 * {
     margin: 0;
+    overflow: hidden;
 }
 
 .landing-page-background {
     background-color: rgba(20, 29, 47, 1);
-    // background-image: url('./../../assets/img/Background\ shapes.png');
-    // background-image: url('./../../assets/img/28.\ hero-background.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top 80px center;
-    // background-position: top;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    // position: relative;
 }
 
 .shadows {
@@ -24,8 +21,6 @@
     justify-content: center;
     background-image: url('./../../assets/img/Shadows\ \(1\).png');
     background-repeat: no-repeat;
-    
-    // max-width: 1920px;
     width: 100%;
 }
 
@@ -38,7 +33,7 @@ app-above-the-fold {
     display: flex;
     justify-content: center;
     width: 100%;
-    // max-width: 1920px;
+    height: 100vh;
 }
 
 app-about-me-component {
@@ -55,8 +50,8 @@ app-portfolio-component {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
 }
 
 app-comments {
@@ -75,8 +70,6 @@ app-contact {
     }
 }
 
-
-
 @media(max-width:999px) {
     .shadows {
         background-size: 100% 100%;
@@ -94,12 +87,12 @@ app-contact {
         background-size: 100% 140%;
     }
 }
+
 @media(max-width:3499px) {
     .shadows {
         background-size: 100% 160%;
     }
 }
-
 
 @media(min-width:3499px) and (max-width:3999px) {
     .shadows {

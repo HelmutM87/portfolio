@@ -25,6 +25,8 @@ export class ContactComponent {
 
   mailTest = false;
 
+  showConfirmation = false; // Status für Bestätigungsbutton
+
   /**
  * Configuration for the HTTP POST request used to send the contact form data.
  * Contains the endpoint URL, the body formatting function, and HTTP options.
@@ -69,10 +71,23 @@ export class ContactComponent {
     if (ngForm.submitted && ngForm.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: (response) => { ngForm.resetForm(); },
+          next: (response) => { this.showConfirmationButton(); ngForm.resetForm(); },
           error: (error) => { console.error(error); },
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) { ngForm.resetForm(); }
+  }
+
+/**
+   * Shows the confirmation button temporarily by setting `showConfirmation` to true.
+   * Hides the button after 3 seconds.
+   * 
+   * @returns {void}
+   */
+  showConfirmationButton() {
+    this.showConfirmation = true;
+    setTimeout(() => {
+      this.showConfirmation = false;
+    }, 3000);
   }
 }

@@ -2,7 +2,7 @@
 
 h1 {
     color: white;
-    font-size: 90px;
+    font-size: 78px;
 }
 
 .about-me-section {
@@ -42,8 +42,10 @@ h1 {
 .about-me-sub-boxes {
     display: flex;
     align-items: flex-start;
-    > img {
+
+    >img {
         transition: 125ms;
+
         &:hover {
             filter: drop-shadow(0 0 5px rgba(112, 230, 28, 1));
         }
@@ -100,10 +102,11 @@ h1 {
 @media (max-width: 1299px) {
 
     .picture-frame {
-    //     height: 450px;
-    >img{
-        margin-left: -10px;
-    }
+
+        //     height: 450px;
+        >img {
+            margin-left: -10px;
+        }
     }
 
     .text-section {
@@ -119,7 +122,8 @@ h1 {
 
     .picture-frame {
         height: 420px;
-        >img{
+
+        >img {
             margin-left: 0;
         }
     }
@@ -137,7 +141,7 @@ h1 {
     .picture-frame {
         height: 380px;
 
-        >img{
+        >img {
             margin-left: 0;
         }
     }
@@ -152,10 +156,16 @@ h1 {
 
     .picture-frame {
         height: 360px;
-        >img{
+
+        >img {
             margin-left: -28px;
         }
     }
+
+    h1 {
+        font-size: 67px;
+    }
+
 }
 
 @media (max-width: 949px) {
@@ -163,6 +173,8 @@ h1 {
     .picture-frame {
         height: 350px;
     }
+
+
 }
 
 @media (max-width: 899px) {

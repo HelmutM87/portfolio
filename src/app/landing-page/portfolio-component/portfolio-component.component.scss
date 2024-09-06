@@ -6,11 +6,12 @@
     width: 100%;
     color: white;
     padding-top: 100px;
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
 
     >p {
         text-align: center;
+        padding: 0 32px;
     }
 }
 
@@ -20,6 +21,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 17px;
+    padding: 0 32px;
 }
 
 .img-join {
@@ -27,16 +29,12 @@
     justify-content: center;
     width: 480px;
     max-width: 100%;
-    animation: slideInFromLeft 500ms ease-out forwards;
-    
-    opacity: 0; /* Unsichtbar zu Beginn */
-    transform: translateX(-100%); /* Startposition außerhalb des Viewports */
-    transition: transform 500ms ease-out, opacity 500ms ease-out;
-    transition: transform 0.3s ease-in-out;
+
     >img {
         max-height: 400px;
         max-width: 100%;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
             transform: scale(1.1);
         }
@@ -48,23 +46,17 @@
     justify-content: center;
     width: 480px;
     max-width: 100%;
-    animation: slideInFromRight 500ms ease-out forwards; 
 
-    opacity: 0; /* Unsichtbar zu Beginn */
-    transform: translateX(+100%); /* Startposition außerhalb des Viewports */
-    transition: transform 500ms ease-out, opacity 500ms ease-out;
-    transition: transform 0.3s ease-in-out;
     >img {
         max-height: 400px;
         max-width: 100%;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
             transform: scale(1.1);
         }
     }
 }
-
-
 
 .text {
     display: flex;
@@ -159,23 +151,25 @@
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-100%); /* Startposition außerhalb des Viewports (von links) */
-        opacity: 0; /* Optional: Element ist zu Beginn unsichtbar */
+        transform: translateX(-100%);
+        opacity: 0;
     }
+
     100% {
-        transform: translateX(0); /* Endposition im Viewport */
-        opacity: 1; /* Optional: Element wird sichtbar */
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromRight {
     0% {
-        transform: translateX(+100%); /* Startposition außerhalb des Viewports (von links) */
-        opacity: 0; /* Optional: Element ist zu Beginn unsichtbar */
+        transform: translateX(+100%);
+        opacity: 0;
     }
+
     100% {
-        transform: translateX(0); /* Endposition im Viewport */
-        opacity: 1; /* Optional: Element wird sichtbar */
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -295,6 +289,7 @@
 
     .headline {
         gap: 10px;
+
         >h1 {
             font-size: 40px;
         }

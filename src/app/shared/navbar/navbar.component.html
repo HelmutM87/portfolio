@@ -1,5 +1,5 @@
 <div class="navbar-background">
-   <div  class="navbar">
+  <div class="navbar">
 
     <div id="menu-overlay" class="menu-overlay-bg d-none">
       <div class="menu-overlay">
@@ -23,12 +23,21 @@
     </div>
 
     <div>
+
+      <!-- <div class="language">
+        <a (click)="switchLanguage('de')" [class.active]="currentLang === 'de'">DE</a> |
+        <a (click)="switchLanguage('en')" [class.active]="currentLang === 'en'">EN</a> |
+        <a (click)="switchLanguage('es')" [class.active]="currentLang === 'es'">ES</a>
+      </div> -->
+
       <div class="language">
-        <a (click)="switchLanguage('de')">DE</a> |
-        <a (click)="switchLanguage('en')">EN</a> |
-        <a (click)="switchLanguage('es')">ES</a>
+        <a (click)="switchLanguage('de')" [class.active]="currentLang === 'de'" class="language-link">DE</a> |
+        <a (click)="switchLanguage('en')" [class.active]="currentLang === 'en'" class="language-link">EN</a> |
+        <a (click)="switchLanguage('es')" [class.active]="currentLang === 'es'" class="language-link">ES</a>
       </div>
       
+      
+
       <a href="#about-me">{{ 'ABOUT_ME' | translate }}</a>
       <a href="#my-skills">{{ 'SKILLS' | translate }}</a>
       <a href="#portfolio">{{ 'PORTFOLIO' | translate }}</a>

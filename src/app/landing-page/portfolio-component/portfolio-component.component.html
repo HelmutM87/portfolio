@@ -6,44 +6,37 @@
     </div>
     <p>{{ 'EXPLORE' | translate }}</p>
 
-    <!-- <div class="portfolio-project">
-        <div class="img-join">
-            <img src="/assets/img/join.png" alt="">
-        </div> -->
+    <div class="portfolio-project" id="portfolioItem1" #portfolioItem>
+        <div data-aos="flip-up" data-aos-delay="800" class="img-join">
+            <img (click)="openInNewTab('https://join.helmut-martens.com/index.html')" src="/assets/img/join.png" alt="">
+        </div>
 
-        <div class="portfolio-project" id="portfolioItem1" #portfolioItem>
-            <div class="img-join">
-                <img (click)="openInNewTab('https://join.helmut-martens.com/index.html')" src="/assets/img/join.png" alt="">
-            </div>
-
-        <div class="text">
+        <div data-aos="zoom-in" data-aos-delay="200" class="text">
             <h3>Join</h3>
             <h4>HTML | CSS | JavaScript</h4>
             <p>{{ 'JOIN_DESCRIPTION' | translate }}</p>
             <div class="button-box">
-                <button (click)="openInNewTab('https://join.helmut-martens.com/index.html')">{{ 'TEST' | translate }}</button>
+                <button (click)="openInNewTab('https://join.helmut-martens.com/index.html')">{{ 'TEST' | translate
+                    }}</button>
                 <button (click)="openInNewTab('https://github.com/HelmutM87/Join-Kanban-Board/tree/master/Join')"
                     class="github-button">Github</button>
             </div>
         </div>
     </div>
 
-    <!-- <div class="portfolio-project second-box">
-        <div class="img-epl">
-            <img src="/assets/img/pollo-loco.png" alt="">
-        </div> -->
+    <div class="portfolio-project second-box" id="portfolioItem2" #portfolioItem>
+        <div data-aos="flip-up" data-aos-delay="800" class="img-epl">
+            <img (click)="openInNewTab('https://el-pollo-loco.helmut-martens.com/index.html')"
+                src="/assets/img/pollo-loco.png" alt="">
+        </div>
 
-        <div class="portfolio-project second-box" id="portfolioItem2" #portfolioItem>
-            <div class="img-epl">
-                <img (click)="openInNewTab('https://el-pollo-loco.helmut-martens.com/index.html')" src="/assets/img/pollo-loco.png" alt="">
-            </div>
-
-        <div class="text second-text-box">
+        <div data-aos="zoom-in" data-aos-delay="200" class="text second-text-box">
             <h3>El Pollo loco</h3>
             <h4>HTML | CSS | JavaScript</h4>
             <p>{{ 'EPL_DESCRIPTION' | translate }}</p>
             <div class="button-box">
-                <button (click)="openInNewTab('https://el-pollo-loco.helmut-martens.com/index.html')">{{ 'TEST' | translate }}</button>
+                <button (click)="openInNewTab('https://el-pollo-loco.helmut-martens.com/index.html')">{{ 'TEST' |
+                    translate }}</button>
                 <button (click)="openInNewTab('https://github.com/HelmutM87/el-pollo-loco')"
                     class="github-button">Github</button>
             </div>
