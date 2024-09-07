@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    // min-height: 100vh;
 }
 
 .above-the-fold-content {
@@ -155,12 +154,10 @@
     gap: 10px;
     margin-bottom: 32px;
     transform: rotate(90deg);
-    /* Dreht das Element, damit der Text nach unten zeigt */
     animation: bounce 3s infinite;
 
     >img {
         transform: rotate(270deg);
-        /* Dreht das Bild zurück */
 
     }
 }
@@ -309,7 +306,6 @@
         >h2 {
             font-size: 31px;
         }
-
     }
 
     .lets-talk-button {
@@ -375,7 +371,6 @@
 }
 
 @media (max-width: 799px) {
-
     .border {
         display: none;
     }
@@ -384,10 +379,87 @@
         display: none;
     }
 
-    .scroll {
-        display: none;
+    .hero {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-image: url('./../../../assets/img/profile-picture.png');
+        display: flex;
+        background-position: top 10px center;
+        background-size: contain;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
+    .frame {
+        margin-bottom: 188px;
+    }
+
+    .above-the-fold-bottom-bar-mobile {
+        bottom: 32px;
+        left: 0;
+        position: absolute;
+    }
+}
+
+@media (max-width: 599px) {
+    #email-adress {
+        display: none;
+    }
+}
+
+@media (max-width: 399px) {
+    .lets-talk-button {
+        bottom: -60px;
+    }
+
+    .frame {
+        margin-bottom: 160px;
+    }
+
+    .first-frame-section {
+        >h2 {
+            font-size: 17px;
+        }
+    }
+
+    .second-frame-section {
+        >h1 {
+            font-size: 28px;
+        }
+
+        >h2 {
+            font-size: 22px;
+        }
+    }
+
+    .purple-line {
+        width: 50px;
+    }
+
+}
+
+
+@media (max-width: 379px) {
+    .first-frame-section {
+        >h2 {
+            font-size: 14px;
+        }
+    }
+
+    .second-frame-section {
+        >h1 {
+            font-size: 24px;
+        }
+
+        >h2 {
+            font-size: 19px;
+        }
+    }
+}
+
+@media (max-width: 799px) {
     .above-the-fold {
         background-position: top 80px center;
         background-size: 100%;
@@ -399,535 +471,42 @@
         height: 100%;
     }
 
-
-
     .border-mobile {
+        position: absolute;
+        top: 42%;
+        bottom: -14%;
+        left: 0;
+        right: 0;
         background-image: url('./../../../assets/img/28.\ hero-background.svg');
+        background-size: cover;
         width: 100%;
-        height: 88%;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 25%;
-        align-items: center;
+    }
+}
+
+@media (max-width: 549px) {
+    .border-mobile {
+        position: absolute;
+        top: calc(42% + (100vw - 549px) * 0.5);
+        bottom: -14%;
+        left: 0;
+        right: 0;
+        background-image: url('./../../../assets/img/28.\ hero-background.svg');
+        background-size: cover;
+        width: 100%;
     }
 
     .hero {
-        height: 100%;
-        width: 100%;
-        background-image: url('./../../../assets/img/profile-picture.png');
-        display: flex;
-        background-position: top 10px center;
-        background-size: contain;
-        flex-direction: column;
-        justify-content: flex-end;
-        // justify-content: space-around;
-        // align-items: center;
-
-
+        background-size: 116%;
     }
 
-
-
-    // .first-frame-section {
-    //     >h2 {
-    //         font-size: 16px;
-    //     }
-    // }
-
-    // .second-frame-section {
-    //     >h1{
-    //         font-size: 26px;
-    //     }
-    //     >h2{
-    //         font-size: 20px;
-    //     }
-    // }
-
-    .first-frame-section {
-
-        >h2 {
-            font-size: 23px;
-
-        }
-    }
-
-    .second-frame-section {
-        >h1 {
-            font-size: 40px;
-        }
-
-        >h2 {
-            font-size: 31px;
-        }
-    }
-
-    // .above-the-fold-bottom-bar {
-    //     margin-right: 0;
-    //     margin-bottom: 32px;
-    // }
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 599px) {
-    #email-adress {
-        display: none;
-    }
-
-    // .lets-talk-button{
-    //     bottom: -70px;
-    // }
-
-    // .border-mobile {
-    //     gap: 15%;
-    // }
-}
-
-// @media (max-width: 499px) {
-//     .hero {
-//         background-position: top 40px center;
-//     }
-
-//     .above-the-fold {
-//         // background-position: top 160px center;
-//     }
-
-// .border-mobile{
-//     height: 86%;
-// }
-// }
-
-@media (max-width: 449px) {
-    .border-mobile {
-        height: 92%;
-        // gap: 28%;
-    }
-}
-
-@media (max-width: 499px) {
-    .first-frame-section {
-        //         width: 64px;
-        //         display: flex;
-        //         justify-content: flex-end;
-
-        >h2 {
-            font-size: 19px;
-        }
-    }
-
-    .second-frame-section {
-        //         display: flex;
-
-        >h1 {
-            font-size: 34px;
-        }
-
-        >h2 {
-            font-size: 26px;
-        }
+    .above-the-fold {
+        background-position: top 100px center;
     }
 }
 
 @media (max-width: 399px) {
-    .border-mobile {
-        height: 98%;
-    }
-
-    .first-frame-section {
-        //         width: 64px;
-        //         display: flex;
-        //         justify-content: flex-end;
-
-        >h2 {
-            font-size: 17px;
-        }
-    }
-
-    .second-frame-section {
-        //         display: flex;
-
-        >h1 {
-            font-size: 28px;
-        }
-
-        >h2 {
-            font-size: 22px;
-        }
-    }
-
-}
-
-//     .lets-talk-button{
-//         bottom: -70px;
-//     }
-
-// .above-the-fold-bottom-bar{
-//     margin-bottom: 24px;
-//     margin-right: 0;
-// }
-
-// .frame{
-//     padding: 0 15px;
-// }
-
-// }
-
-@media (max-width: 379px) {
-    .border-mobile {
-        height: 100%;
-    }
-
-    .first-frame-section {
-        //         width: 64px;
-        //         display: flex;
-        //         justify-content: flex-end;
-
-        >h2 {
-            font-size: 14px;
-        }
-    }
-
-    .second-frame-section {
-        //         display: flex;
-
-        >h1 {
-            font-size: 24px;
-        }
-
-        >h2 {
-            font-size: 19px;
-        }
-    }
-
     .hero {
-        background-position: top 24px center;
-    }
-
-}
-
-// @media (max-width: 349px){
-//     .frame{
-//         padding: 0px 16px;
-//     }
-// }
-
-
-
-
-
-@media (max-height: 600px) {
-
-    // .hero{
-    //     background-position: top 28px center;
-    //     height: 100%;
-    // }
-    .border-mobile {
-        height: 80%;
-        background-size: cover;
+        background-size: 135%;
     }
 }
-
-
-@media (max-height: 700px) {
-
-    // .hero{
-    //     background-position: top 28px center;
-    //     height: 100%;
-    // }
-    .border-mobile {
-        height: 80% !important;
-        background-size: cover;
-    }
-}
-
-
-
-@media (max-height: 820px) {
-
-    // .hero{
-    //     background-position: top 28px center;
-    //     height: 100%;
-    // }
-    .border-mobile {
-        height: 100%;
-        background-size: cover;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-// @media (max-width: 799px) {
-
-//     .above-the-fold {
-//         background-position: center;
-//         background-size: contain;
-//         height: 100vh;
-//     }
-
-//     .above-the-fold-content {
-//         display: flex;
-//         flex-direction: column;
-//         width: 100%;
-//         align-items: center;
-//     }
-
-//     .hero {
-//         width: 60%;
-
-//         >img {
-//             padding-top: 50px;
-//             height: fit-content;
-//             overflow: hidden;
-//         }
-//     }
-
-//     #email-adress {
-//         display: none;
-//     }
-
-//     .frame-side {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         // margin-top: -220px;
-
-//         // margin-top: -340px;
-
-//         margin-top: -308px;
-//         width: 80%;
-//     }
-
-//     .scroll {
-//         display: none;
-//     }
-
-//     .frame {
-//         margin: 32px 32px 32px 0;
-//     }
-
-//     .first-frame-section {
-//         width: 64px;
-//         display: flex;
-//         justify-content: flex-end;
-
-//         >h2 {
-//             font-size: 19px;
-//         }
-//     }
-
-//     .second-frame-section {
-//         display: flex;
-
-//         >h1 {
-//             font-size: 40px;
-//         }
-
-//         >h2 {
-//             font-size: 31px;
-//         }
-//     }
-
-//     .lets-talk-button {
-//         padding: 10px 10px;
-//     }
-
-//     .border {
-//         // margin-top: -373px;
-//         // height: 500px;
-
-//         // margin-top: -470px;
-//         // height: 570px;
-
-//         margin-top: -388px;
-//         height: 580px;
-//     }
-// }
-
-// @media (max-width: 749px) {
-//     .frame-side {
-//         // margin-top: -240px;
-//     }
-
-//     .border {
-//         // margin-top: -355px;
-//         // height: 498px;
-//     }
-
-// }
-
-// @media (max-width: 699px) {
-//     .frame-side {
-//         width: 90%;
-//     }
-
-//     .hero{
-//         width: 80%;
-//     }
-// }
-
-// @media (max-width: 549px) {
-//     .frame-side {
-//         margin-top: -300px;
-//         width: 100%;
-//     }
-
-//     .border {
-//         // margin-top: -420px;
-//         // height: 600px;
-//         margin-top: -460px;
-//         height: 730px;
-//     }
-// }
-
-// @media (max-width: 499px) {
-//     .frame-side {
-//         margin-top: -380px;
-//     }
-
-//     .border {
-//         margin-top: -460px;
-//         height: 730px;
-//     }
-// }
-
-// @media (max-width: 449px) {
-//     .frame-side {
-//         margin-top: -355px;
-
-//     }
-
-//     .hero {
-//         width: 100%;
-//     }
-
-//     .second-frame-section {
-//         display: flex;
-
-//         >h1 {
-//             font-size: 30px;
-//         }
-
-//         >h2 {
-//             font-size: 23px;
-//         }
-//     }
-// }
-
-// @media (max-width: 375px) {
-
-//     .first-frame-section {
-//         >h2 {
-//             font-size: 16px;
-//         }
-//     }
-
-//     .second-frame-section {
-//         display: flex;
-
-//         >h1 {
-//             font-size: 26px;
-//         }
-
-//         >h2 {
-//             font-size: 20px;
-//         }
-//     }
-
-//     .purple-line {
-//         width: 68px;
-//     }
-
-//     .lets-talk-button {
-//         font-size: 18px;
-//     }
-
-//     .hero {
-
-//         height: 750px;
-//     }
-
-//     .border {
-//         margin-top: -430px;
-//         height: 700px;
-//     }
-
-//     .frame-side {
-//         margin-top: -260px;
-//     }
-// }
-
-// @media (max-width: 345px) {
-
-//     .second-frame-section {
-//         >h1 {
-//             font-size: 24px;
-//         }
-
-//         >h2 {
-//             font-size: 18px;
-//         }
-//     }
-
-//     .first-frame-section {
-//         >h2 {
-//             font-size: 18px;
-//         }
-//     }
-
-//     .lets-talk-button {
-//         font-size: 15px;
-//     }
-
-//     .purple-line {
-//         width: 48px;
-//     }
-// }
-
-// @media (max-height: 800px) {
-//     .above-the-fold-content {
-//         padding: 10px; /* Reduziert den Abstand bei kleineren Höhen */
-//     }
-
-//     // .second-frame-section > h1 {
-//     //     font-size: 40px; /* Verkleinert den Text */
-//     // }
-
-//     // .second-frame-section > h2 {
-//     //     font-size: 28px;
-//     // }
-
-//     // .lets-talk-button {
-//     //     padding: 10px 20px; /* Verkleinert den Button */
-//     // }
-
-//     .border {
-//         margin-top: -350px; /* Passt den negativen Margin-Wert an */
-//         // height: 500px; /* Verkleinert die Höhe der Border */
-//         height: 570px;
-//     }
-
-//     .frame-side{
-//         // margin-top: -340px;
-//         margin-top: -280px;
-//     }
-// }
-
-// @media (max-height: 790px){
-
-
-
-// }

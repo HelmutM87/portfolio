@@ -1,4 +1,4 @@
-h1{
+h1 {
     font-size: 78px;
 }
 
@@ -73,7 +73,7 @@ h1{
     }
 }
 
-.pseudo-box{
+.pseudo-box {
     height: 10px;
     margin-bottom: 10px;
 }
@@ -107,9 +107,6 @@ h1{
     background-color: rgba(151, 71, 255, 1);
 }
 
-
-  
-
 @keyframes push-up-and-down {
     0% {
         bottom: 0;
@@ -124,34 +121,34 @@ h1{
     }
 }
 
-@media (max-width: 1849px){
-    h1{
+@media (max-width: 1849px) {
+    h1 {
         font-size: 72px;
     }
 }
 
-@media (max-width: 1609px){
-    h1{
+@media (max-width: 1609px) {
+    h1 {
         font-size: 66px;
     }
 }
 
-@media (max-width: 1409px){
-    h1{
+@media (max-width: 1409px) {
+    h1 {
         font-size: 60px;
     }
 }
 
-@media (max-width: 1249px){
-    h1{
+@media (max-width: 1249px) {
+    h1 {
         font-size: 48px;
     }
 }
 
 @media (min-width: 950px) and (max-width: 1199px) {
-        >h1 {
-            font-size: 48px;
-        }
+    >h1 {
+        font-size: 48px;
+    }
 }
 
 @media (min-width: 950px) {
@@ -221,7 +218,7 @@ h1{
         background-size: 50% 75%;
     }
 
-    h1{
+    h1 {
         font-size: 32px;
     }
 }
@@ -233,7 +230,6 @@ h1{
 
     h1 {
         font-size: 26px;
-        
     }
 
     .second-box {
@@ -261,7 +257,7 @@ h1{
     h1 {
         font-size: 23px;
     }
-    
+
     .skills-icon {
         >img {
             width: 40px;

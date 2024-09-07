@@ -14,8 +14,6 @@ h2 {
     background-color: rgba(20, 29, 47, 1);
     width: 100%;
     max-width: 1920px;
-    // padding-left: 32px;
-    // padding-right: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,13 +26,17 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     >a {
-        &:hover{
-           color: rgba(112, 230, 28, 1);
+        &:hover {
+            color: rgba(112, 230, 28, 1);
         }
+
         color: white;
-        >img{
+
+        >img {
             max-height: 80px;
+
             &:hover {
                 transition: 125ms;
                 cursor: pointer;
@@ -42,8 +44,6 @@ h2 {
             }
         }
     }
-
-    
 }
 
 .middle {
@@ -52,38 +52,18 @@ h2 {
     }
 }
 
-// .right-side {
-//     width: 174px;
-//     display: flex;
-//     justify-content: space-between;
-
-//     >a {
-//         &:hover {
-//             cursor: pointer;
-//             filter: drop-shadow(0px 0px 4px #FFFFFF);
-//         }
-//     }
-
-//     >img {
-//         &:hover {
-//             cursor: pointer;
-//             filter: drop-shadow(0px 0px 4px #FFFFFF);
-//         }
-//     }
-// }
-
 .right-side {
     width: 174px;
     display: flex;
     justify-content: space-between;
-    align-items: center; // Füge dies hinzu, um die Elemente zu zentrieren
+    align-items: center;
 
     >a {
-        display: flex; // Füge dies hinzu
-        align-items: center; // Füge dies hinzu, um das Bild in der Mitte des Links auszurichten
-        text-decoration: none; // Entferne den Standard-Unterstrich
-        padding: 0; // Entferne jegliche zusätzliche Polsterung
-        margin: 0; // Entferne jegliche zusätzliche Ränder
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
 
         &:hover {
             cursor: pointer;

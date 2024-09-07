@@ -42,7 +42,6 @@ export class ContactComponent {
     },
   };
 
-
   /**
  * Determines if the submit button should be enabled based on the form's validity
  * and whether required fields are filled.
@@ -59,7 +58,6 @@ export class ContactComponent {
       this.contactData.privacyPolicy
     );
   }
-
 
   /**
  * Handles the form submission. Sends the form data via an HTTP POST request if the form is valid.

@@ -50,8 +50,6 @@ app-portfolio-component {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    // padding-left: 32px;
-    // padding-right: 32px;
 }
 
 app-comments {
@@ -94,7 +92,7 @@ app-contact {
     }
 }
 
-@media(min-width:3499px) and (max-width:3999px) {
+@media(min-width:3499px) {
     .shadows {
         background-size: 100% 300%;
         background-position: initial;

@@ -11,51 +11,6 @@
             </p>
         </div>
 
-        <!-- <form (ngSubmit)="onSubmit(contactForm)" class="form-box" #contactForm="ngForm">
-
-            <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name"
-                [placeholder]="'NAME_PLACEHOLDER' | translate" type="text" name="name" id="" required>
-            <span *ngIf="!name.valid && (name.touched || contactForm.submitted) && !name.disabled">
-                {{ 'NAME_REQUIRED' | translate }}
-            </span>
-
-            <input #email="ngModel" [(ngModel)]="contactData.email" [placeholder]="'EMAIL_PLACEHOLDER' | translate"
-                type="email" name="email" id="" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-            <span *ngIf="!email.valid && (email.touched || contactForm.submitted) && !email.disabled">
-                {{ 'EMAIL_REQUIRED' | translate }}
-            </span>
-
-            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"
-                [placeholder]="'MESSAGE_PLACEHOLDER' | translate" type="text" name="message" required></textarea>
-            <span *ngIf="!message.valid && (message.touched || contactForm.submitted) && !message.disabled">
-                {{ 'MESSAGE_REQUIRED' | translate }}
-            </span>
-
-            <div class="privacy-policy-checkbox">
-                <input #privacyCheckbox="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox"
-                    name="privacy-policy-checkbox" id="" required>
-                <p>{{ 'I_READ' | translate }}<a [routerLink]="['/privacy-policy']">{{ 'PRIVACY_POLICY' | translate
-                        }}</a>{{ 'AND_AGREE' | translate }}</p>
-            </div>
-            <span *ngIf="!privacyCheckbox.valid && contactForm.submitted">
-                {{ 'MUST_AGREE' | translate }}
-            </span>
-
-            <button type="submit" [ngClass]="{'enabled-button': isButtonEnabled(contactForm)}"
-                [disabled]="!isButtonEnabled(contactForm)">
-                {{ 'SEND_MESSAGE' | translate }}
-            </button>
-
-            <div class="scroll-to-top-button-box">
-                <div>
-                    <a href="#top"><img src="./../../../assets/img/4. Go up button.svg" alt="scroll to top button"></a>
-                </div>
-            </div>
-            <div class="confirmation-button" *ngIf="showConfirmation" [ngClass]="{'animate-in': showConfirmation}">
-                {{ 'EMAIL_SENT' | translate }}
-            </div>
-        </form> -->
-
         <form (ngSubmit)="onSubmit(contactForm)" class="form-box" #contactForm="ngForm">
 
             <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name"
@@ -65,7 +20,7 @@
                     {{ 'NAME_REQUIRED' | translate }}
                 </span>
             </div>
-        
+
             <input #email="ngModel" [(ngModel)]="contactData.email" [placeholder]="'EMAIL_PLACEHOLDER' | translate"
                 type="email" name="email" id="" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             <div class="error-message">
@@ -73,7 +28,7 @@
                     {{ 'EMAIL_REQUIRED' | translate }}
                 </span>
             </div>
-        
+
             <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"
                 [placeholder]="'MESSAGE_PLACEHOLDER' | translate" type="text" name="message" required></textarea>
             <div class="error-message">
@@ -81,7 +36,7 @@
                     {{ 'MESSAGE_REQUIRED' | translate }}
                 </span>
             </div>
-        
+
             <div class="privacy-policy-checkbox">
                 <input #privacyCheckbox="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox"
                     name="privacy-policy-checkbox" id="" required>
@@ -93,13 +48,12 @@
                     {{ 'MUST_AGREE' | translate }}
                 </span>
             </div>
-        
+
             <button type="submit" [ngClass]="{'enabled-button': isButtonEnabled(contactForm)}"
                 [disabled]="!isButtonEnabled(contactForm)">
                 {{ 'SEND_MESSAGE' | translate }}
             </button>
         </form>
-        
-        
+
     </div>
 </div>

@@ -102,8 +102,6 @@ h1 {
 @media (max-width: 1299px) {
 
     .picture-frame {
-
-        //     height: 450px;
         >img {
             margin-left: -10px;
         }
@@ -119,7 +117,6 @@ h1 {
 }
 
 @media (max-width: 1279px) {
-
     .picture-frame {
         height: 420px;
 
@@ -149,11 +146,9 @@ h1 {
     .green-line {
         width: 15%;
     }
-
 }
 
 @media (max-width: 1059px) {
-
     .picture-frame {
         height: 360px;
 
@@ -165,20 +160,15 @@ h1 {
     h1 {
         font-size: 67px;
     }
-
 }
 
 @media (max-width: 949px) {
-
     .picture-frame {
         height: 350px;
     }
-
-
 }
 
 @media (max-width: 899px) {
-
     .picture-frame {
         display: none;
     }
@@ -199,15 +189,12 @@ h1 {
 }
 
 @media (min-width: 880px) {
-
     .about-me-section {
-
         background-image: none;
     }
 }
 
 @media (max-width: 749px) {
-
     .about-me-section {
         background-size: 50% 75%;
     }
@@ -220,7 +207,6 @@ h1 {
 }
 
 @media (max-width: 449px) {
-
     .text-section {
         >h1 {
             font-size: 40px;
