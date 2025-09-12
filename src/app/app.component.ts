@@ -1,24 +1,52 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
+// import { RouterModule, RouterOutlet, Router, NavigationEnd } from '@angular/router';
+// import { filter } from 'rxjs/operators';
+// import { FooterComponent } from './shared/footer/footer.component';
+// import { NavbarComponent } from './shared/navbar/navbar.component';
+
+// @Component({
+//   selector: 'app-root',
+//   standalone: true,
+//   imports: [RouterModule, RouterOutlet, FooterComponent, NavbarComponent],
+//   templateUrl: './app.component.html',
+//   styleUrl: './app.component.scss'
+// })
+// export class AppComponent {
+//   title = 'Helmut Martens';
+
+//   constructor(private router: Router) {
+//     this.router.events.pipe(
+//       filter(event => event instanceof NavigationEnd)
+//     ).subscribe(() => {
+//       window.scrollTo(0, 0);
+//     });
+//   }
+// }
+
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterModule, RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterModule, RouterOutlet, FooterComponent, NavbarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']   // ⚠️ hier war vorher styleUrl (ohne s), das ist falsch
 })
 export class AppComponent {
   title = 'Helmut Martens';
 
-  constructor(private router: Router) {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      window.scrollTo(0, 0);
-    });
+  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd)
+      ).subscribe(() => {
+        window.scrollTo(0, 0);
+      });
+    }
   }
 }
