@@ -25,7 +25,7 @@ export class ContactComponent {
 
   mailTest = false;
 
-  showConfirmation = false; // Status für Bestätigungsbutton
+  showConfirmation = false; 
 
   /**
  * Configuration for the HTTP POST request used to send the contact form data.

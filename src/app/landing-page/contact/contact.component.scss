@@ -63,6 +63,7 @@
         border-width: 1px;
         border-radius: 10px;
         min-height: 50px;
+        padding-left: 10px;
 
         &::placeholder {
             color: white;
@@ -85,6 +86,8 @@
         border-width: 1px;
         border-radius: 10px;
         min-height: 150px;
+        padding-left: 10px;
+        padding-top: 10px;
 
         &::placeholder {
             color: white;
