@@ -56,6 +56,23 @@
     }
 }
 
+.img-ab-at {
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    max-width: 100%;
+
+    >img {
+        max-height: 400px;
+        max-width: 100%;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -140,6 +157,8 @@
     justify-content: space-around;
     gap: 17px;
 }
+
+
 
 .second-text-box {
     display: flex;
